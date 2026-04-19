@@ -1,0 +1,10 @@
+:root {
+    --header-height: 60px;
+    --primary-color: #4a6748;
+    --secondary-color: #7a9c78;
+    --accent-color: #d4af37;
+    --background-color: #f5f3ee;
+    --white-color: #fff;
+    --text-color: #333;
+    --shadow-color: rgba(0,0,0,0.05);
+}
