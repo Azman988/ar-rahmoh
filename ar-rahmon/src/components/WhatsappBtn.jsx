@@ -1,13 +1,10 @@
 import React from 'react';
 
-const WhatsAppOrderBtn = ({ productName }) => {
-  // 1. Set your business number
+const WhatsAppOrderBtn = ({ productName, consult }) => {
   const phoneNumber = "2348065855687";
 
-  // 2. Create the custom message
-  const message = `Hello Ar-Rahmon, I am interested in the ${productName}. Please provide more details.`;
+  const message = productName ? `Hello Ar-Rahmon, I am interested in the ${productName}. Please provide more details.` : "Hello Ar-Rahmon, Pls i need doctor's consultation.";
 
-  // 3. Encode the message for the URL
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
   return (
@@ -16,9 +13,9 @@ const WhatsAppOrderBtn = ({ productName }) => {
       target="_blank" 
       rel="noopener noreferrer" 
       className="btn btn-success"
-      style={{ backgroundColor: '#25D366', border: 'none' }}
+      style={{ backgroundColor: '#25D366', border: 'none', fontSize: 14 }}
     >
-      Order via WhatsApp
+      {consult ? 'Consult via WhatsApp' : 'Inquire via WhatsApp'}
     </a>
   );
 };

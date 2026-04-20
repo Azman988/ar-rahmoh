@@ -85,7 +85,7 @@ export function HomePage() {
                 <section className="container-fluid pt-2 pb-3 product-section" id='product-section'>
                     <h5 className='text-center py-4'>Our Curated Selection</h5>
                     <div className="d-flex align-items-center gap-2 overflow-auto p-3 product-container">
-                        {products.slice(0, 5).map(product => {
+                        {products.slice(0, 6).map(product => {
                             return (
                                 <div key={product.id} className="bg-white p-2 pb-3 rounded-3">
                                     <div style={{ width: 210, height: 210, overflow: 'hidden' }} className="border rounded-3 mb-2">
@@ -117,7 +117,7 @@ export function HomePage() {
                     <h5 className='text-center py-3'>
                         Client's Comments
                     </h5>
-                    <div className='d-flex flex-column flex-md-row align-items-stretch gap-3 px-4'>
+                    <div className='d-flex flex-column flex-md-row align-items-stretch gap-3 px-5 px-md-4'>
                         <div className='comment-div'>
                             <h6>Mr Yussuf</h6>
                             <div className='comment'>

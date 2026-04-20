@@ -1,4 +1,6 @@
-
+nav {
+    backdrop-filter: blur(10px) !important;
+}
 .navbar-container {
     background: var(--secondary-color);
     box-shadow: 0 0px 4px var(--primary-color);

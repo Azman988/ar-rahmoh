@@ -25,7 +25,7 @@ export function Header() {
                         <div className="collapse navbar-collapse flex-grow-0" id="navbarNav">
                             <ul className="navbar-nav text-white gap-2">
                                 <li className="nav-item">
-                                    <NavLink to="/" className="nav-link active">Home</NavLink>
+                                    <NavLink to="/" className="nav-link">Home</NavLink>
                                 </li>
                                 <li className="nav-item">
                                     <NavLink to="/product" className="nav-link">Products</NavLink>
