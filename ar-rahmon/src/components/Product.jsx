@@ -7,15 +7,15 @@ export function Product() {
     return (
         <>
             <Header />
-            <main>
-                <h4 className='text-center py-3'>All Products</h4>
+            <section className='pt-4'>
+                <h1 className='text-center py-2 mb-0 fs-3'>All Products</h1>
                 <div className="grid-container px-4 py-3">
                     {products.map(product => {
                         return (
-                            <div key={product.id} className="bg-white p-4 product-card">
+                            <div key={product.id} className="p-4 pt-5 product-card">
                                 <div className='w-100 d-flex align-items-center justify-content-center'>
                                     <div style={{ maxWidth: '210px', height: 210, overflow: 'hidden' }} className="border rounded-3 mb-3">
-                                        <img src={product.img} alt={product.name} className='w-100' style={{ objectFit: 'cover', }} />
+                                        <img src={product.img} alt={product.name} className='w-100' style={{ objectFit: 'cover', }} loading='lazy' />
                                     </div>
                                 </div>
 
@@ -24,7 +24,7 @@ export function Product() {
 
                                     <p style={{ marginBottom: 1 }}>Benefits:</p>
 
-                                    <ul className='list-unstyled d-flex flex-column align-items-center gap-1' style={{ fontSize: 14, color: '#555' }}>
+                                    <ul className='list-unstyled d-flex flex-column align-items-center gap-1' style={{ fontSize: 15, color: '#555' }}>
                                         {product.desc.map(descp => {
                                             return (
                                                 <li key={descp.option} style={{ fontFamily: 'Glory', maxWidth: '250px' }}>
@@ -42,13 +42,14 @@ export function Product() {
                         )
                     })}
                 </div>
+                <p className='text-center fw-bold text-success'>We look forward to adding more products soon!</p>
                 <div className='d-flex flex-column align-items-center justify-content-center text-center py-3 disclaimer'>
                     <p>
                         <span className='fw-bold'>Disclaimer:</span> All our products are 100% natural and inspired by traditional Islamic values. They are designed to support your body wellness naturally.
                     </p>
                     <WhatsAppOrderBtn consult={'consult'} />
                 </div>
-            </main>
+            </section>
         </>
     )
 }

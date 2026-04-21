@@ -66,12 +66,12 @@ nav {
     color: var(--primary-color);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .call-btn {
         display: none !important; 
     }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
     #sideNav {
         width: 0px !important;
     }

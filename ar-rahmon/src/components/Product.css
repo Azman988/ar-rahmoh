@@ -5,7 +5,7 @@
     margin: auto 40px;
 }
 .product-card {
-    background: var(--white-color);
+    background: var(--background-color);
     border-radius: 10px;
     transition: transform 0.3s ease;
     text-align: center;
@@ -16,7 +16,7 @@
 }
 .disclaimer {
     width: 100vw;
-    font-size: 15px;
+    font-size: 16px;
     font-family: 'Glory', sans-serif;
     background: var(--background-color);
     color: var(--primary-color);

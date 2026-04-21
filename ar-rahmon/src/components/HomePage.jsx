@@ -67,7 +67,7 @@ export function HomePage() {
                             to ensure your health and well-being.
                         </div>
                         <div className='d-flex flex-column gap-3 mt-3'>
-                            <h6>Our commitment to deliver the best, has granted Us.</h6>
+                            <h6>Our commitment to deliver the best, granted Us.</h6>
                             <div className="key-note"><span>✓</span> Certification of Organization.</div>
                             <div className="key-note"><span>✓</span> Recommendations from Clients.</div>
                             <div className="key-note"><span>✓</span> Our Community Trust & more..</div>
@@ -78,7 +78,7 @@ export function HomePage() {
                         </div>
                     </div>
                     <div className="col-md-6 col-12 position-relative banner-image">
-                        <img src={Logo} alt="Natural Islamic Medicine Ingredients" />
+                        <img src={Logo} alt="Logo" loading='lazy' />
                     </div>
                 </section>
 
@@ -89,7 +89,7 @@ export function HomePage() {
                             return (
                                 <div key={product.id} className="bg-white p-2 pb-3 rounded-3">
                                     <div style={{ width: 210, height: 210, overflow: 'hidden' }} className="border rounded-3 mb-2">
-                                        <img src={product.img} alt={product.name} className='w-100' style={{ objectFit: 'cover', }} />
+                                        <img src={product.img} alt={product.name} className='w-100' style={{ objectFit: 'cover', }} loading='lazy' />
                                     </div>
                                     <h6>{product.name}</h6>
                                     <WhatsAppOrderBtn productName={product.name} />
