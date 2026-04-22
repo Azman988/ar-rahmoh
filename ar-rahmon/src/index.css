@@ -1,1 +1,7 @@
-*{padding: 0; margin: 0; box-sizing: border-box; font-family: "Exo", "Roboto", "Glory" sans-serif; scrollbar-width: none !important;}
+*{  
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box !important; 
+    font-family:  "Roboto", "Exo", "Glory" sans-serif !important; 
+    scrollbar-width: none !important;
+}

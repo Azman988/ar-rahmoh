@@ -4,7 +4,14 @@
     --secondary-color: #7a9c78;
     --accent-color: #d4af37;
     --background-color: #f5f3ee;
+    --light-bg: rgb(248 249 250);
     --white-color: #fff;
     --text-color: #333;
-    --shadow-color: rgba(0,0,0,0.05);
+    --shadow-color: rgba(0,0,0,0.2);
+    --checkmark-color: #88cf15; 
+    --whatsapp-green: #25D366;
+}
+strong {
+    color: var(--primary-color);
+    font-size: 17px;
 }

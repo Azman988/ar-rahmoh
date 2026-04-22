@@ -1,5 +1,5 @@
 .banner {
-    background: url(../assets/banner-background.png) no-repeat center !important;
+    background: url(../assets/banner-background.webp) no-repeat center !important;
     width: 100%;
     min-height: fit-content;
 }
@@ -20,7 +20,7 @@
 .description {
     font-size: 1.1rem;
     line-height: 1.6;
-    opacity: 0.95;
+    opacity: 0.9;
     font-family: "Glory" !important;
 }
 .cta-buttons {
@@ -128,7 +128,7 @@
     gap: 10px;
 }
 .key-note span {
-    background: var(--primary-color); color: #88cf15;
+    background: var(--primary-color); color: var(--checkmark-color);
     padding: 4px 10px;
     border-radius: 50%;
     font-weight: bold;
@@ -193,48 +193,26 @@
 .services {
     font-family: 'Exo', sans-serif;
     font-size: 15px;
-    background-color: #fafaf9; color: #333;
+    background-color: var(--white-color); color: var(--text-color);
     font-weight: 500;
     display: flex;
     align-items: center;
     padding: 10px;
-    box-shadow: 1px 1px 3px #333;
+    box-shadow: 1px 1px 3px var(--text-color);
     border-radius: 15px;
 }
 .services span {
-    color: #88cf15;
+    color: var(--checkmark-color);
     font-weight: bold;
     padding: 0 10px;
     font-size: 18px;
-}
-/* Comment */
-.comment-section > div > div {
-    padding: 10px 20px;
-}
-.comment-section h6 {
-    font-weight: 700;
-    font-family: 'Exo';
-}
-.comment-section .comment-div {
-    background: var(--background-color);
-    border-right: 2px solid var(--secondary-color);
-}
-.comment-section .comment {
-    text-align: center;
-    padding: 10px 7%;
-    font-family: 'Glory';
-    font-weight: 600;
-}
-.comment-section p {
-    text-align: end;
-    font-weight: 600;
 }
 /* Contact */
 .contact-section {
     background: rgba(20, 102, 45, 0.808); color: var(--white-color);
 }
 .whatsapp-btn {
-    background: #25D366;
+    background: var(--whatsapp-green);
 }
 /* Responsive adjustment for mobile */
 @media (max-width: 600px) {

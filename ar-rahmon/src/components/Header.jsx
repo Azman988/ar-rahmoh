@@ -1,6 +1,6 @@
 import { Link, NavLink } from 'react-router'
 import { useState } from 'react'
-import Logo from '../assets/ar-rahmon-logo.jpeg'
+import Logo from '../assets/ar-rahmon-logo.webp'
 import './Header.css'
 
 export function Header() {
