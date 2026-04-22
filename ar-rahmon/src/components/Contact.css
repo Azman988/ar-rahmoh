@@ -1,0 +1,60 @@
+.contact-page h5 {
+    color: var(--primary-color);
+}
+.location-container,
+.appointment-container {
+    max-width: 700px;
+}
+.location-container {
+    background: var(--background-color);
+    padding: 1rem 1.2rem; border-radius: 1rem;
+}
+.location-container .hours {
+    color: var(--primary-color);
+    font-size: 1.1rem; font-weight: 400;
+    font-family: 'roboto', serif;
+}
+.location-container p {
+    color: var(--text-color);
+    font-size: 1.15rem;
+    font-family: 'Glory', serif;
+}
+.contact-locations h6 {
+    font-weight: 500;
+    font-size: 1.1rem;
+    font-family: 'Exo', serif;
+    margin-bottom: 0.5rem !important;
+}
+.contact-details ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 5px;
+}
+.contact-details li {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-family: 'Glory', serif;
+}
+.contact-details li a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+.contact-details li a:hover {
+    text-decoration: underline;
+}
+.fa-location-dot {
+    color: rgb(224, 116, 116);
+}
+.fa-phone {
+    color: var(--primary-color);
+}
+.appointment-container {
+    background: var(--light-bg);
+    padding: 1rem 1.2rem; border-radius: 1rem;
+}
+.appointment-container .caution {
+    background: var(--background-color); color: var(--text-color);
+    font-size: 1rem; padding: 0.6rem 5px;
+    border-left: 2px solid red; border-radius: 0.5rem;
+    font-family: 'Glory', serif; 
+}

@@ -1,0 +1,23 @@
+.comment-section > div > div {
+    padding: 10px 20px;
+}
+.comment-section h6 {
+    font-weight: 700;
+    font-family: 'Exo';
+}
+.comment-section .comment-div {
+    background: var(--background-color);
+    border-left: 3px solid var(--secondary-color);
+    border-radius: 15px;
+    box-shadow: 1px 1px 6px var(--shadow-color);
+}
+.comment-section .comment {
+    text-align: center;
+    padding: 10px 7%;
+    font-family: 'Glory';
+    font-weight: 600;
+}
+.comment-section p {
+    text-align: end;
+    font-weight: 600;
+}

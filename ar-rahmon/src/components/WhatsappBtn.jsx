@@ -1,9 +1,9 @@
 import React from 'react';
 
-const WhatsAppOrderBtn = ({ productName, consult }) => {
+const WhatsAppOrderBtn = ({ productName }) => {
   const phoneNumber = "2348065855687";
 
-  const message = productName ? `Hello Ar-Rahmon, I am interested in the ${productName}. Please provide more details.` : "Hello Ar-Rahmon, Pls i need doctor's consultation.";
+  const message = productName ? `Hello Ar-Rahmon, I am interested in the ${productName}. Please provide more details.` : "Hello Doct., I would like to schedule an appointment.";
 
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
@@ -12,10 +12,10 @@ const WhatsAppOrderBtn = ({ productName, consult }) => {
       href={whatsappUrl} 
       target="_blank" 
       rel="noopener noreferrer" 
-      className="btn btn-success"
-      style={{ backgroundColor: '#25D366', border: 'none', fontSize: 14 }}
+      className="btn"
+      style={{ backgroundColor: '#25D366', color: 'white', border: 'none', fontSize: 15, padding: 10 }}
     >
-      {consult ? 'Consult via WhatsApp' : 'Inquire via WhatsApp'}
+      {productName ? 'Inquire via WhatsApp' : 'Consult via WhatsApp'}
     </a>
   );
 };
