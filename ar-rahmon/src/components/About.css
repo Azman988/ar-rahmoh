@@ -1,0 +1,51 @@
+.background {
+    background: var(--background-color) !important;
+    width: 100%; border-radius: 15px;
+    min-height: fit-content;
+}
+.headers {
+    color: var(--primary-color);
+    font-weight: 650;
+    font-size: 1.15rem;
+    font-family: 'Exo', serif;
+    margin-bottom: 0.5rem !important;
+}
+.descriptions {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-family: 'Glory', serif;
+    padding-left: 1rem; border-left: 2px dashed var(--primary-color);
+}
+.descriptions span {
+    color: var(--primary-color);
+    font-weight: 650;
+}
+.values-list > div {
+    display: flex;
+    align-items: start;
+    gap: 0.5rem;
+}
+.values-list > div span {
+    color: var(--checkmark-color);
+}
+.c-t-a {
+    width: 100%;
+    font-size: 14px;
+    font-family: 'Exo', sans-serif;
+    background: var(--background-color);
+    color: var(--primary-color);
+    margin-top: 20px;
+    padding: 1.3rem 1rem;
+}
+.cta-btn {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+.cta-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}

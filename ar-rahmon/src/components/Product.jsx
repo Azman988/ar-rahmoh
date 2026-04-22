@@ -7,8 +7,10 @@ export function Product() {
     return (
         <>
             <Header />
-            <section className='pt-4'>
-                <h1 className='text-center py-2 mb-0 fs-3'>All Products</h1>
+            <section>
+                <div>
+                    <img src="./src/assets/product.jpg" alt="product" className="mb-2 w-100 img-fluid" style={{ height: '100px', objectFit: 'cover' }} />
+                </div>
                 <div className="grid-container px-4 py-3">
                     {products.map(product => {
                         return (
@@ -22,18 +24,21 @@ export function Product() {
                                 <div className='d-flex flex-column align-items-center justify-content-center'>
                                     <h6 style={{ fontWeight: 'bold', fontFamily: 'Exo' }}> {product.name} </h6>
 
-                                    <p style={{ marginBottom: 1 }}>Benefits:</p>
+                                    <div className='text-start'>
+                                        {/* <p style={{marginBottom: 1, marginLeft: 0}}>Benefits:</p> */}
 
-                                    <ul className='list-unstyled d-flex flex-column align-items-center gap-1' style={{ fontSize: 15, color: '#555' }}>
-                                        {product.desc.map(descp => {
-                                            return (
-                                                <li key={descp.option} style={{ fontFamily: 'Glory', maxWidth: '250px' }}>
-                                                    <span className='fw-bold me-1'>✓</span>
-                                                    {descp.option}
-                                                </li>
-                                            )
-                                        })}
-                                    </ul>
+                                        <ul className='list-unstyled' style={{ fontSize: 15, color: '#555', marginLeft: 3 }}>
+                                            {product.desc.map(descp => {
+                                                return (
+                                                    <li key={descp.option} style={{ fontFamily: 'Glory', maxWidth: '250px' }}>
+                                                        <span className='fw-bold me-1'>✓</span>
+                                                        {descp.option}
+                                                    </li>
+                                                )
+                                            })}
+                                        </ul>
+                                    </div>
+                                    
                                     <div className='text-center mt-4'>
                                         <WhatsAppOrderBtn productName={product.name} />
                                     </div>
@@ -43,11 +48,8 @@ export function Product() {
                     })}
                 </div>
                 <p className='text-center fw-bold text-success'>We look forward to adding more products soon!</p>
-                <div className='d-flex flex-column align-items-center justify-content-center text-center py-3 disclaimer'>
-                    <p>
-                        <span className='fw-bold'>Disclaimer:</span> All our products are 100% natural and inspired by traditional Islamic values. They are designed to support your body wellness naturally.
-                    </p>
-                    <WhatsAppOrderBtn consult={'consult'} />
+                <div className='text-center p-3 disclaimer'>
+                    <span className='fw-bold'>Disclaimer:</span> All our products are 100% natural and inspired by traditional Islamic values. They are designed to support your body wellness naturally.
                 </div>
             </section>
         </>
