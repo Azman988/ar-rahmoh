@@ -10,7 +10,7 @@ export function Header() {
         <nav className="sticky-top navbar p-1 navbar-expand-md" >
             <div className="d-flex align-items-center justify-content-between w-100 px-4 py-2 text-white rounded-2 navbar-container">
                 {/* Logo  */}
-                <Link to="/">
+                <Link to="/ar-rahmoh/" end>
                     <img src={Logo} alt="arRahmoh-logo" style={{
                         width: 55, height: 55, borderRadius: 10
                     }} />
@@ -25,19 +25,19 @@ export function Header() {
                         <div className="collapse navbar-collapse flex-grow-0" id="navbarNav">
                             <ul className="navbar-nav text-white gap-2">
                                 <li className="nav-item">
-                                    <NavLink to="/" className="nav-link">Home</NavLink>
+                                    <NavLink to="/ar-rahmoh/" className="nav-link" end>Home</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <NavLink to="/product" className="nav-link">Products</NavLink>
+                                    <NavLink to="/ar-rahmoh/product" className="nav-link">Products</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <NavLink to="/service" className="nav-link">Services</NavLink>
+                                    <NavLink to="/ar-rahmoh/service" className="nav-link">Services</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <NavLink to="/about" className="nav-link">About</NavLink>
+                                    <NavLink to="/ar-rahmoh/about" className="nav-link">About</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <NavLink to="/contact" className="nav-link">Contact</NavLink>
+                                    <NavLink to="/ar-rahmoh/contact" className="nav-link">Contact</NavLink>
                                 </li>
                             </ul>
                         </div>
@@ -59,19 +59,19 @@ export function Header() {
                 {/* <!-- Navbar Links --> */}
                 <ul className="navbar-nav gap-5 py-5 px-4 w-100 border-bottom border-white">
                     <li className="nav-item">
-                        <NavLink to="/" className="nav-link text-center">Home</NavLink>
+                        <NavLink to="/ar-rahmoh/" className="nav-link text-center" end>Home</NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink to="/product" className="nav-link text-center">Products</NavLink>
+                        <NavLink to="/ar-rahmoh/product" className="nav-link text-center">Products</NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink to="/service" className="nav-link text-center">Services</NavLink>
+                        <NavLink to="/ar-rahmoh/service" className="nav-link text-center">Services</NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink to="/about" className="nav-link text-center">About</NavLink>
+                        <NavLink to="/ar-rahmoh/about" className="nav-link text-center">About</NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink to="/contact" className="nav-link text-center">Contact</NavLink>
+                        <NavLink to="/ar-rahmoh/contact" className="nav-link text-center">Contact</NavLink>
                     </li>
                 </ul>
                 <div className="w-100 d-flex align-items-center justify-content-center px-3 my-3">
