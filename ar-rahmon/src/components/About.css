@@ -1,18 +1,18 @@
-.background {
+.content-wrapper {
     background: var(--background-color) !important;
     width: 100%; border-radius: 15px;
     min-height: fit-content;
 }
-.headers {
+.content-wrapper .headers {
     color: var(--primary-color);
     font-weight: 650;
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     font-family: 'Exo', serif;
     margin-bottom: 0.5rem !important;
 }
 .descriptions {
     color: var(--text-color);
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-family: 'Glory', serif;
     padding-left: 1rem; border-left: 2px dashed var(--primary-color);
 }
@@ -28,7 +28,17 @@
 .values-list > div span {
     color: var(--checkmark-color);
 }
-.c-t-a {
+.content-wrapper .caution {
+    padding: 0.5rem 1.2rem 0.5rem 0.5rem; margin-left: 30px; text-align: center;
+    color: var(--text-color);
+    font-size: 0.9rem;
+    font-family: 'Glory', serif;
+}
+.content-wrapper .caution span {
+    color: rgb(207, 67, 67);
+    font-weight: 650;
+}
+.about .c-t-a {
     width: 100%;
     font-size: 14px;
     font-family: 'Exo', sans-serif;
@@ -37,7 +47,7 @@
     margin-top: 20px;
     padding: 1.3rem 1rem;
 }
-.cta-btn {
+.about .c-t-a .cta-btn {
     background-color: var(--primary-color);
     color: var(--white-color);
     border: none;
@@ -45,7 +55,7 @@
     border-radius: 0.5rem;
     transition: background-color 0.3s ease;
 }
-.cta-btn:hover {
+.about .c-t-a .cta-btn:hover {
     background-color: var(--primary-color);
     color: var(--white-color);
 }

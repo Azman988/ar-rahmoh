@@ -18,11 +18,11 @@ export const products = [
         img: './src/assets/products/fibriod-shrinker.webp',
         desc: [
             {
-                option: 'Helps reduce fibroid size.'
+                option: 'Controls menstrual bleeding.'
             }, {
-                option: 'Helps control heavy menstrual bleeding.'
+                option: 'Supports reproductive health.'
             }, {
-                option: 'Supports reproductive health ...'
+                option: 'Reduces fibroid size...'
             }
         ]
     }, {
@@ -31,17 +31,17 @@ export const products = [
         img: './src/assets/products/glucoforce-support.webp',
         desc: [
             {
-                option: 'Helps maintain insulin sensitivity.'
+                option: 'Maintain insulin sensitivity.'
             }, {
-                option: 'Promotes balance in sugar metabolism.'
+                option: 'Balance in sugar metabolism.'
             }, {
-                option: 'Helps maintain blood pressure ...'
+                option: 'Maintain blood pressure ...'
             }
         ]
     }, {
         id: 'jd2hfejk0-6937hj54-gdhy3883n-ggh8347h',
         name: 'Spermaxis',
-        img: './src/assets/products/sperm.png',
+        img: './src/assets/products/sperm.webp',
         desc: [
             {
                 option: 'Enhance Sperm Count.'
@@ -54,14 +54,14 @@ export const products = [
     }, {
         id: 'hgdhy3883-jd2hfejk6-nggh8347-0937hj54',
         name: 'Hepatitis Natural Herb',
-        img: './src/assets/products/hepatitis-natural.png',
+        img: './src/assets/products/hepatitis-natural.webp',
         desc: [
             {
-                option: 'Cleanse and detoxify liver.'
+                option: 'Cleanse & detoxify liver.'
             }, {
-                option: 'Helps manage symptoms with general discomfort.'
+                option: 'Manage general discomfort.'
             }, {
-                option: 'Helps Supports Liver Health & more.'
+                option: 'Supports Liver Health ...'
             }
         ]
     }, {
@@ -70,22 +70,22 @@ export const products = [
         img: './src/assets/products/jedi.webp',
         desc: [
             {
-                option: 'Relieves pile and hemorrhoids symptoms.'
+                option: 'Pile & hemorrhoids cure.'
             }, {
-                option: 'Supports men with low libido issues.'
+                option: 'Solves men low libido issues.'
             }, {
-                option: 'Promotes healthy bowel movement ...'
+                option: 'Ease bowel movement ...'
             }
         ]
     }, {
         id: '0937gdhy-jd2h38hj-54fejk683-nggh8347h',
         name: 'Pelvic & Reproductive Support',
-        img: './src/assets/products/pelvic-.png',
+        img: './src/assets/products/pelvic-.webp',
         desc: [
             {
-                option: 'Supports reproductive health in men & women.'
+                option: 'Maintains reproductive health.'
             }, {
-                option: 'Supports male vitality, sexual wellness & stamina.'
+                option: 'Male vitality, sexual & stamina.'
             }, {
                 option: 'Relieves pelvic discomfort ...'
             }
@@ -96,9 +96,9 @@ export const products = [
         img: './src/assets/products/camel-milk.webp',
         desc: [
             {
-                option: 'Helps lower blood sugar in diabetics.'
+                option: 'Lower blood sugar in diabetics.'
             }, {
-                option: 'Contains proteins to help the body fight infections.'
+                option: 'Fights body infections.'
             }, {
                 option: 'Helps for easy digestion ...'
             }
@@ -109,9 +109,9 @@ export const products = [
         img: './src/assets/products/camel-urine.webp',
         desc: [
             {
-                option: 'Helps manage stubborn skin conditions & strengthen hair follicles.'
+                option: 'Strengthen hair follicles.'
             }, {
-                option: 'Supports liver health & reduce abdominal swelling (dropsy).'
+                option: 'Manage stubborn skin issues.'
             }, {
                 option: 'Anti bacterial & fungi ...'
             }
@@ -119,14 +119,14 @@ export const products = [
     }, {
         id: '0937hj54-2hfeh883-jd34jk6ng-g7gdhy38h',
         name: 'Pure Organic Honey',
-        img: './src/assets/products/pure-honey.png',
+        img: './src/assets/products/pure-honey.webp',
         desc: [
             {
-                option: 'Helps balance gut bacteria & can relieve symptoms of gastric ulcers.'
+                option: 'Balance gut bacteria.'
             }, {
-                option: 'Contains carbohydrates for a healthy energy boost.'
+                option: 'Relieve gastric ulcers.'
             }, {
-                option: 'Contains enzymes for better digestion ...'
+                option: 'Supports better digestion...'
             }
         ]
     }, {
@@ -135,11 +135,11 @@ export const products = [
         img: './src/assets/products/black-seed-powder.webp',
         desc: [
             {
-                option: 'Helps balance gut bacteria & can relieve symptoms of gastric ulcers.'
+                option: 'Boosts immune health .'
             }, {
-                option: 'Contains carbohydrates for a healthy energy boost.'
+                option: 'Reduces bodily inflammation'
             }, {
-                option: 'Contains enzymes for better digestion ...'
+                option: 'Supports heart function...'
             }
         ]
     }, {
@@ -148,11 +148,11 @@ export const products = [
         img: './src/assets/products/black-seed-oil.webp',
         desc: [
             {
-                option: 'Helps balance gut bacteria and can relieve symptoms of gastric ulcers.'
+                option: 'Promotes skin healing.'
             }, {
-                option: 'Contains carbohydrates for a healthy energy boost.'
+                option: 'Fights harmful bacteria.'
             }, {
-                option: 'Contains enzymes for better digestion ...'
+                option: 'Supports easy digestion...'
             }
         ]
     }, {
@@ -161,24 +161,24 @@ export const products = [
         img: './src/assets/products/palm-kernel-oil.webp',
         desc: [
             {
-                option: 'Helps balance gut bacteria and can relieve symptoms of gastric ulcers.'
+                option: 'Moisturizes dry skin.'
             }, {
-                option: 'Contains carbohydrates for a healthy energy boost.'
+                option: 'Strengthens hair strands.'
             }, {
-                option: 'Contains enzymes for better digestion ...'
+                option: 'Provides quick energy...'
             }
         ]
     }, {
         id: '0937jk6h-gdhy847h3-jd2j54hfe-ng38gh83',
         name: 'Zayton (Olive Oil)',
-        img: './src/assets/products/zayton-oil.png',
+        img: './src/assets/products/zayton-oil.webp',
         desc: [
             {
-                option: 'Helps balance gut bacteria and can relieve symptoms of gastric ulcers.'
+                option: 'Combats cellular aging.'
             }, {
-                option: 'Contains carbohydrates for a healthy energy boost.'
+                option: 'Protects heart health.'
             }, {
-                option: 'Contains enzymes for better digestion ...'
+                option: 'Lowers stroke risk...'
             }
         ]
     }
