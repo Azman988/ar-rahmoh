@@ -9,7 +9,7 @@ export function Product() {
             <Header />
             <section>
                 <div>
-                    <img src="./src/assets/product.webp" alt="product" className="mb-2 w-100 img-fluid" style={{ height: '100px', objectFit: 'cover' }} />
+                    <img src="./product.webp" alt="product" className="mb-2 w-100 img-fluid" style={{ height: '100px', objectFit: 'cover' }} />
                 </div>
                 <div className="grid-container px-4 py-3">
                     {products.map(product => {

@@ -8,7 +8,7 @@ export const Contact = () => {
             <Header />
             <div className=" contact-page">
                 <div>
-                    <img src="./src/assets/contact.webp" alt="Contact" className="mb-2 w-100 img-fluid" style={{ height: '105px', objectFit: 'cover' }} />
+                    <img src="./contact.webp" alt="Contact" className="mb-2 w-100 img-fluid" style={{ height: '105px', objectFit: 'cover' }} />
                 </div>
                 <div className="p-3 d-flex flex-column align-items-center justify-content-center gap-4">
                     <div className="d-flex flex-column align-items-center justify-content-center location-container">

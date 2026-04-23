@@ -9,7 +9,7 @@ export const About = () => {
             <Header />
             <div className="about">
                 <div>
-                    <img src="./src/assets/about-us.webp" alt="About Us" className="mb-2 w-100 img-fluid" style={{ height: '100px', objectFit: 'cover' }} />
+                    <img src="./about-us.webp" alt="About Us" className="mb-2 w-100 img-fluid" style={{ height: '100px', objectFit: 'cover' }} />
                 </div>
                 <div className="text-center mb-1 fw-bold fs-6 px-3">Learn more about our company and our mission to provide holistic health solutions.</div>
 

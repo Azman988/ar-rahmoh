@@ -8,7 +8,7 @@ export function Service() {
             <Header />
             <section>
                 <div>
-                    <img src="./src/assets/services.webp" alt="Services" className="mb-2 w-100 img-fluid" style={{ height: '100px', objectFit: 'cover' }} />
+                    <img src="./services.webp" alt="Services" className="mb-2 w-100 img-fluid" style={{ height: '100px', objectFit: 'cover' }} />
                 </div>
 
                 <div className="container-fluid">
