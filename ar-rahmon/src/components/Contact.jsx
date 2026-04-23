@@ -8,7 +8,7 @@ export const Contact = () => {
             <Header />
             <div className=" contact-page">
                 <div>
-                    <img src="./src/assets/contact.jpg" alt="Contact" className="mb-2 w-100 img-fluid" style={{ height: '105px', objectFit: 'cover' }} />
+                    <img src="./src/assets/contact.webp" alt="Contact" className="mb-2 w-100 img-fluid" style={{ height: '105px', objectFit: 'cover' }} />
                 </div>
                 <div className="p-3 d-flex flex-column align-items-center justify-content-center gap-4">
                     <div className="d-flex flex-column align-items-center justify-content-center location-container">
@@ -90,7 +90,7 @@ export const Contact = () => {
                         <p className="mb-0 mt-2 text-center hours">Operating Hours: Mon - Sat, 9:00 AM - 5:00 PM</p>
                     </div>
 
-                    <div className="d-flex flex-column align-items-center justify-content-center gap-2 text-center appointment-container">
+                    <div className="d-flex flex-column align-items-center justify-content-center gap-2 text-center appointment-container" id="appointment">
                         <h5 className="mb-3 fw-bold fs-5">Schedule an Appointment</h5>
                         <div className="d-flex flex-column align-items-center gap-3">
                             <div style={{fontFamily: 'Exo', fontSize: 15}}>
@@ -99,7 +99,7 @@ export const Contact = () => {
                             </div>
                             <WhatsAppOrderBtn productName={null} />
                             <div className="text-start caution">
-                                <span className="fw-bold">Note!</span> Our specialist is available for in-person consultations at our head office only on <span className="fw-bold">Thurs, Fri & Sat</span>. Please ensure to schedule your appointment in advance to secure your preferred time slot.
+                                <span className="fw-bold">Note!</span> Our specialist is available for in-person consultations at our head office only on <span className="fw-bold">Thurs, Fri & Sat</span> every week. Please ensure to schedule your appointment in advance to secure your preferred time slot.
                             </div>
                         </div>
                     </div>

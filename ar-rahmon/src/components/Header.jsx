@@ -1,17 +1,17 @@
 import { Link, NavLink } from 'react-router'
 import { useState } from 'react'
-import Logo from '../assets/ar-rahmon-logo.webp'
+import Logo from '../assets/ar-Rahmoh-logo.webp'
 import './Header.css'
 
 export function Header() {
     const [menu, setMenu] = useState(false)
 
     return (
-        <nav className="sticky-top navbar p-1 navbar-expand-md">
+        <nav className="sticky-top navbar p-1 navbar-expand-md" >
             <div className="d-flex align-items-center justify-content-between w-100 px-4 py-2 text-white rounded-2 navbar-container">
                 {/* Logo  */}
                 <Link to="/">
-                    <img src={Logo} alt="arRahmon-logo" style={{
+                    <img src={Logo} alt="arRahmoh-logo" style={{
                         width: 55, height: 55, borderRadius: 10
                     }} />
                 </Link>

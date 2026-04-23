@@ -1,6 +1,6 @@
+import { Link } from "react-router"
 import { Header } from "./Header"
 import './Service.css'
-import WhatsAppOrderBtn from "./WhatsappBtn"
 
 export function Service() {
     return (
@@ -8,14 +8,14 @@ export function Service() {
             <Header />
             <section>
                 <div>
-                    <img src="./src/assets/services.jpg" alt="Services" className="mb-2 w-100 img-fluid" style={{ height: '100px', objectFit: 'cover' }} />
+                    <img src="./src/assets/services.webp" alt="Services" className="mb-2 w-100 img-fluid" style={{ height: '100px', objectFit: 'cover' }} />
                 </div>
 
                 <div className="container-fluid">
-                    <p className="text-center pb-2 px-3 intro">At <span className="fw-bold">AR-RAHMOH ISLAMIC CURE & BLOOD CUPPING THERAPY LTD</span>, we are dedicated to providing holistic health solutions that harness the power of nature. Our services include:</p>
+                    <p className="text-center pb-2 px-3 intro">At <span className="fw-bold">AR-RAHMOH ISLAMIC CURE & BLOOD CUPPING THERAPY LTD</span>, we are dedicated to providing holistic health solutions that harness the power of nature. Below are few lists of our services:</p>
                     <div className="d-flex flex-column services-wrapper">
-                        <h5 className="fw-bold fs-5">Top Services</h5>
-                        <div className="p-3 services-list">
+                        <h5 className="fw-bold fs-5 headers">Our Top Services</h5>
+                        <div className="p-3 pb-5 position-relative services-list">
                             <div className="service">
                                 <div>
                                     <strong>Authentic Hijama Therapy:</strong> A sacred healing art refined for modern wellness, our authentic Hijama therapy provides a safe, clinical approach to systemic detoxification and physical recovery. Using sterile techniques and precise cupping methods.
@@ -24,15 +24,15 @@ export function Service() {
                                     <h6>Key Benefits:</h6>
                                     <ul>
                                         <li>
-                                            <span className="fw-bold me-1">✓</span>
-                                            Effectively draws out "stagnant" blood and metabolic waste.
+                                            <span className="checkmarks">✓</span>
+                                            Effectively draws out stagnant blood and metabolic waste.
                                         </li>
                                         <li>
-                                            <span className="fw-bold me-1">✓</span> 
+                                            <span className="checkmarks">✓</span> 
                                             Naturally alleviates tension, migraines, and joint discomfort.
                                         </li>
                                         <li>
-                                            <span className="fw-bold me-1">✓</span> 
+                                            <span className="checkmarks">✓</span> 
                                             Stimulates body's defensive response & enhances circulation.
                                         </li>
                                     </ul>
@@ -47,15 +47,15 @@ export function Service() {
                                     <h6>Key Benefits:</h6>
                                     <ul>
                                         <li>
-                                            <span className="fw-bold me-1">✓</span> 
+                                            <span className="checkmarks">✓</span> 
                                             Targeted relief for chronic joint pain and inflammation.
                                         </li>
                                         <li>
-                                            <span className="fw-bold me-1">✓</span> 
-                                            Immune system stimulation for enhanced overall wellness.
+                                            <span className="checkmarks">✓</span> 
+                                            Manages Immune system stimulation for enhanced overall wellness.
                                         </li>
                                         <li>
-                                            <span className="fw-bold me-1">✓</span> 
+                                            <span className="checkmarks">✓</span> 
                                             Natural support for systemic healing and recovery.
                                         </li>
                                     </ul>
@@ -70,11 +70,17 @@ export function Service() {
                                     <h6>Key Benefits:</h6>
                                     <ul>
                                         <li>
-                                            <span className="fw-bold me-1">✓</span> Induces deep sweating to effectively flush out heavy metals and impurities.</li>
+                                            <span className="checkmarks">✓</span> 
+                                            Induces deep sweating to effectively flush out heavy metals and impurities.
+                                        </li>
                                         <li>
-                                            <span className="fw-bold me-1">✓</span> Improves cardiovascular flow and speeds up the recovery of tired muscles and joints.</li>
+                                            <span className="checkmarks">✓</span> 
+                                            Improves cardiovascular flow and speeds up the recovery of tired muscles and joints.
+                                        </li>
                                         <li>
-                                            <span className="fw-bold me-1">✓</span> Promotes the release of endorphins, naturally reducing cortisol levels.</li>
+                                            <span className="checkmarks">✓</span> 
+                                            Promotes the release of endorphins, naturally reducing cortisol levels.
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -87,20 +93,25 @@ export function Service() {
                                     <h6>Key Benefits:</h6>
                                     <ul>
                                         <li>
-                                            <span className="fw-bold me-1">✓</span> Formulated to support the natural resilience and health of arterial walls.
+                                            <span className="checkmarks">✓</span> 
+                                            Formulated to support the natural resilience and health of arterial walls.
                                         </li>
                                         <li>
-                                            <span className="fw-bold me-1">✓</span> Helps the body maintain efficient blood flow, oxygen and vital nutrients reach every organ.
+                                            <span className="checkmarks">✓</span> 
+                                            Helps body maintain efficient blood flow, oxygen and vital nutrients reach every organ.
                                         </li>
                                         <li>
-                                            <span className="fw-bold me-1">✓</span> Supports overall heart vitality and healthy cholesterol levels.
+                                            <span className="checkmarks">✓</span> 
+                                            Supports overall heart vitality and healthy cholesterol levels and more.
                                         </li>
                                     </ul>
                                 </div>
                             </div>
+
+                            <span className="position-absolute bottom-0 start-50 translate-middle-x pb-2 more-service">And many more..!</span>
                         </div>
 
-                        <h5 className="fw-bold fs-5">Other Services</h5>
+                        <h5 className="fw-bold fs-5 mt-3 headers">Other Services</h5>
                         <div className="p-3 services-list">
                             <div className="service"><strong>Personalized Herbal Consultations:</strong> Our Personalized Herbal Consultations offer a one-on-one diagnostic experience where our experts analyze your unique health profile.</div>
 
@@ -113,8 +124,8 @@ export function Service() {
                     </div>
                 </div>
                 <div className="d-flex flex-column align-items-center justify-content-center text-center py-3 px-3 c-t-a">
-                    <p className="p-0">Experience the healing power of nature with <span className="fw-bold">Ar-Rahmoh Islamic Cure</span>. Your health and well-being are our top priorities.</p>
-                    <WhatsAppOrderBtn productName={null} />
+                    <p className="p-0">Experience the healing power of nature with <span className="fw-bold">Ar-Rahmoh Islamic Cure</span>, Schedule an Appointment for Consultation. "Your health and well-being, our top priorities."</p>
+                    <Link to="/contact#appointment" className="btn cta-btn" >Schedule Appointment</Link>
                 </div>
 
             </section>

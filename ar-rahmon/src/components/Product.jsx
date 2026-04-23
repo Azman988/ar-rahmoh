@@ -9,7 +9,7 @@ export function Product() {
             <Header />
             <section>
                 <div>
-                    <img src="./src/assets/product.jpg" alt="product" className="mb-2 w-100 img-fluid" style={{ height: '100px', objectFit: 'cover' }} />
+                    <img src="./src/assets/product.webp" alt="product" className="mb-2 w-100 img-fluid" style={{ height: '100px', objectFit: 'cover' }} />
                 </div>
                 <div className="grid-container px-4 py-3">
                     {products.map(product => {
@@ -27,7 +27,7 @@ export function Product() {
                                     <div className='text-start'>
                                         {/* <p style={{marginBottom: 1, marginLeft: 0}}>Benefits:</p> */}
 
-                                        <ul className='list-unstyled' style={{ fontSize: 15, color: '#555', marginLeft: 3 }}>
+                                        <ul className='list-unstyled mx-2' style={{ fontSize: 15, color: '#555' }}>
                                             {product.desc.map(descp => {
                                                 return (
                                                     <li key={descp.option} style={{ fontFamily: 'Glory', maxWidth: '250px' }}>
@@ -47,7 +47,7 @@ export function Product() {
                         )
                     })}
                 </div>
-                <p className='text-center fw-bold text-success'>We look forward to adding more products soon!</p>
+                <p className='text-center fw-bold text-success'>We're looking forward to add more products soon!</p>
                 <div className='text-center p-3 disclaimer'>
                     <span className='fw-bold'>Disclaimer:</span> All our products are 100% natural and inspired by traditional Islamic values. They are designed to support your body wellness naturally.
                 </div>

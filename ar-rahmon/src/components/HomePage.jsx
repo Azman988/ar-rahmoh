@@ -1,6 +1,6 @@
 import { Link } from 'react-router'
 import { Header } from './Header'
-import Logo from '../assets/ar-rahmon-logo.webp'
+import Logo from '../assets/ar-Rahmoh-logo.webp'
 import { products } from '../../products'
 import WhatsAppOrderBtn from './WhatsappBtn'
 import './HomePage.css'
@@ -94,7 +94,7 @@ export function HomePage() {
             <section className="container-fluid pt-2 pb-3 product-section" id='product-section'>
                 <h5 className='text-center py-4'>Our Curated Selection</h5>
                 {/* Product cards are dynamically rendered here */}
-                <div className="d-flex align-items-center gap-2 overflow-auto p-3 product-container">
+                <div className="d-flex align-items-center gap-2 overflow-auto p-3 rounded-4 product-container">
                     {products.slice(0, 6).map(product => {
                         return (
                             <div key={product.id} className="bg-white p-2 pb-3 rounded-3">

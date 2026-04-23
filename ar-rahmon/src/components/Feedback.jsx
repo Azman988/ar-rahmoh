@@ -3,7 +3,7 @@ import './Feedback.css';
 export function Feedback({home}) {
     return (
         <section className='py-4 comment-section'>
-            <h5 className='text-center mb-4'>
+            <h5 className='text-center mb-3'>
                 {home ? "Client's Comments" : "Feedback"}
             </h5>
             <div className='d-flex flex-column flex-md-row align-items-stretch gap-3 px-5 px-md-4'>
