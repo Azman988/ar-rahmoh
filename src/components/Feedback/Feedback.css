@@ -1,0 +1,34 @@
+.comments-header {
+    font-weight: 650 !important;
+    font-size: 1.1rem !important;
+    color: var(--primary-color);
+    margin-bottom: 25px !important;
+}
+.comment-div {
+    background: var(--background-color);
+    border-right: 3px solid var(--secondary-color);
+    border-bottom: 3px solid var(--secondary-color);
+    padding: 10px 20px; border-radius: 15px;
+    box-shadow: 1px 1px 6px var(--shadow-color);
+}
+.comment-div > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.comment-div h6 {
+    font-weight: 700;
+    font-family: 'Exo';
+    margin-bottom: 0;
+}
+.comment-div .ratings {
+    color: var(--accent-color) !important;
+    font-size: 20px;
+    pointer-events: none;
+}
+.comment-div .comment {
+    text-align: center;
+    padding: 10px 7%;
+    font-family: 'Glory';
+    font-weight: 600;
+}

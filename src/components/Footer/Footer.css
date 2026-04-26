@@ -1,0 +1,56 @@
+footer {
+    background-color: var(--secondary-color);
+}
+footer h6 {
+    font-family: 'Glory', sans-serif; font-weight: bold; font-size: 18px;
+    color: var(--primary-color);
+    text-shadow: 0 1px 4px var(--accent-color);
+    text-wrap: nowrap; pointer-events: none;
+}
+footer a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+    max-width: fit-content;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+.logo-link {
+    max-width: fit-content;
+}
+.logo-link .logo-text {
+    transition: color 0.3s ease; 
+    font-family: 'Glory', sans-serif; font-size: 17px;
+    line-height: 23px;
+}
+.logo-link:hover .logo-text {
+     font-weight: bold !important;
+    color: var(--accent-color) !important;
+    text-shadow: 0 1px 3px var(--primary-color) !important;
+}
+footer .motto {
+    width: fit-content; text-wrap: nowrap;
+    font-style: oblique; pointer-events: none;
+    background-color: var(--primary-color); 
+    color: var(--accent-color);
+}
+.appreciation p {
+    font-size: 14px;
+    font-style: oblique;
+    font-weight: 500;
+}
+@media screen and (min-width: 767px) and (max-width: 1200px) {
+    .footer-info {
+        width: 100%;
+        margin-right: -20px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .footer-info {
+        margin-right: -40px !important;
+    }
+    .appreciation {
+        max-width: 400px;
+    }
+}

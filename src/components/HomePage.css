@@ -1,10 +1,10 @@
 .banner {
-    background: url(../assets/banner-background.webp) no-repeat center !important;
+    background: url(../assets/banner-background.webp) no-repeat center;
     width: 100%;
     min-height: fit-content;
 }
 .content-container {
-    background: rgba(20, 102, 45, 0.808); color: var(--white-color);
+    background: var(--transparent-green); color: var(--white-color);
     height: 100% !important; width: 100%;
     padding: 50px 0;
 }
@@ -62,23 +62,23 @@
     display: flex; flex-direction: column; align-items: center !important;
     background-color: #fafaf9;
     padding: 40px 20px 20px; border-radius: 30px;
-    box-shadow: 1px 1px 1px 2px var(--secondary-color);
+    box-shadow: 0px 0px 0.3rem 1px var(--secondary-color);
 }
 .pillar-icon {
     margin-top: -60px;
     height: 40px; width: 40px; border-radius: 50%;
     background: var(--white-color);
-    box-shadow: 1px 3px 4px #333;
+    box-shadow: 1px 3px 4px var(--secondary-color);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .heart-pillar {
-    background: rgb(219, 219, 94);
+    background:  #88cf15;
     color: red !important;
 }
 .leaf-pillar {
-    background: #88cf15;
+    background: rgb(231, 231, 145);
     color: green !important;
 }
 .handshake-pillar {
@@ -100,7 +100,7 @@
     flex: 1;
     background-color: var(--secondary-color);
     color: white;
-    padding: 40px 40px 20px 30px;
+    padding: 40px 40px 25px 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -132,24 +132,24 @@
     padding: 4px 10px;
     border-radius: 50%;
     font-weight: bold;
-    margin-right: 10px;
+    margin-right: 6px;
     font-size: 16px;
+    pointer-events: none;
 }
 .home .about-btn {
     color: var(--white-color);
     padding: 8px 20px; border: 2px solid var(--white-color);
     border-radius: 10px;
     text-decoration: none;
-    transition: 0.3s background ease;
+    transition: 0.3s border ease;
 }
 .home .about-btn:hover {
-    background: var(--primary-color);
     border: 2px solid var(--primary-color) !important;
 }
 .contact-btn {
     background: var(--primary-color);
     color: var(--white-color);
-    padding: 8px 20px; border: 2px solid var(--primary-color);
+    padding: 8px 20px; border: 2px solid var(--primary-color) !important;
     border-radius: 10px;
     text-decoration: none;
     transition: 0.3s background ease;
@@ -172,15 +172,25 @@
  /* Product */
  .product-section {
     scroll-margin-top: 80px;
+    background-color: var(--background-color);
+ }
+ .product-section h5 {
+    font-family: 'Glory', sans-serif; font-size: 23px;
+    color: var(--accent-color);
+    text-shadow: 0 1px 3px var(--primary-color);
  }
  .product-container {
-    background: var(--background-color);
+    background: var(--light-bg);
     scrollbar-width: none;
  }
 /* Service */
 .service-section {
     background: linear-gradient(to bottom, var(--secondary-color) 5%, var(--background-color) 100%);
+}
+.service-section h5 {
+    font-family: 'Glory', sans-serif; font-size: 23px;
     color: var(--white-color);
+    text-shadow: 0 1px 3px var(--accent-color);
 }
 .services-container {
     display: grid;
@@ -209,10 +219,13 @@
 }
 /* Contact */
 .contact-section {
-    background: rgba(20, 102, 45, 0.808); color: var(--white-color);
+    background: var(--transparent-green); color: var(--white-color);
 }
 .whatsapp-btn {
     background: var(--whatsapp-green);
+}
+.whatsapp-btn:hover {
+    border: 1px solid var(--whatsapp-green);
 }
 /* Responsive adjustment for mobile */
 @media (max-width: 600px) {

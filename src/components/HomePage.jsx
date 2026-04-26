@@ -1,17 +1,14 @@
 import { Link } from 'react-router'
-import { Header } from './Header'
 import Logo from '../assets/ar-Rahmoh-logo.webp'
 import { products } from '../../products'
-import WhatsAppOrderBtn from './WhatsappBtn'
+import WhatsAppOrderBtn from './WhatsappBtn/WhatsappBtn'
 import './HomePage.css'
-import { Feedback } from './Feedback'
+import { Feedback } from './Feedback/Feedback'
 
 
 export function HomePage() {
     return (
         <>
-            <Header />
-
             <section className="banner">
                 <div className="content-container d-flex align-items-center justify-content-center">
                     <div className='text-center d-flex flex-column gap-3 banner-content'>
@@ -92,14 +89,14 @@ export function HomePage() {
             </section>
 
             <section className="container-fluid pt-2 pb-3 product-section" id='product-section'>
-                <h5 className='text-center py-4'>Our Curated Selection</h5>
+                <h5 className='text-center py-3'>Our Curated Selection</h5>
                 {/* Product cards are dynamically rendered here */}
                 <div className="d-flex align-items-center gap-2 overflow-auto p-3 rounded-4 product-container">
                     {products.slice(0, 6).map(product => {
                         return (
                             <div key={product.id} className="bg-white p-2 pb-3 rounded-3">
                                 <div style={{ width: 210, height: 210, overflow: 'hidden' }} className="border rounded-3 mb-2">
-                                    <img src={product.img} alt={product.name} className='w-100' style={{ objectFit: 'cover', }} loading='lazy' />
+                                    <img src={product.img} alt={product.name} className='product-img' loading='lazy' />
                                 </div>
                                 <h6>{product.name}</h6>
                                 <WhatsAppOrderBtn productName={product.name} />
@@ -140,20 +137,18 @@ export function HomePage() {
             <section className='text-center contact-section'>
                 <div className='d-flex flex-column align-items-center justify-content-center px-3 py-4'>
                     <h6>Begin Your Aid Journey Today</h6>
-                    <p>For Consultation? Reach out on WhatsApp or call for Personalized Advice from our expert.</p>
+                    <p>Reach out on WhatsApp or call for support and more guidance.</p>
                     <div className="d-flex flex-wrap gap-3 mt-2">
-                        <a href="https://wa.me/2348065855687" className="btn d-flex align-items-center px-4 py-2 whatsapp-btn">
-                            <i className="fab fa-whatsapp me-2"></i> WhatsApp Us
+                        <a href="https://wa.me/2349075511763" target='_blank' className="btn d-flex align-items-center px-3 py-2 whatsapp-btn">
+                            <i className="fab fa-whatsapp fs-5 me-2"></i> WhatsApp Us
                         </a>
 
-                        <a href="tel:08165855687" className="btn btn-outline-light d-flex align-items-center px-4 py-2">
-                            <i className="fas fa-phone me-2"></i> Call Now
+                        <a href="tel:09046088723" className="btn btn-outline-light d-flex align-items-center px-4 py-2">
+                            <i className="fas fa-phone fs-5 me-2"></i> Call Now
                         </a>
                     </div>
                 </div>
             </section>
-
-
         </>
     )
 }

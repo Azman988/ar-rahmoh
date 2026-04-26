@@ -1,5 +1,5 @@
 nav {
-    backdrop-filter: blur(10px) !important;
+    backdrop-filter: blur(20px) !important;
 }
 .navbar-container {
     background: var(--secondary-color);
@@ -39,6 +39,7 @@ nav {
 }
 .nav-link.active {
     background-color: var(--primary-color) !important;
+    border-bottom: 2px solid var(--accent-color);
 }
 /* Side Navigation */
 .sideNav {

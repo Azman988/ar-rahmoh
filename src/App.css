@@ -2,6 +2,7 @@
     --header-height: 60px;
     --primary-color: #4a6748;
     --secondary-color: #7a9c78;
+    --transparent-green: rgba(20, 102, 45, 0.808);
     --accent-color: #d4af37;
     --background-color: #f5f3ee;
     --light-bg: rgb(248 249 250);
@@ -11,7 +12,29 @@
     --checkmark-color: #88cf15; 
     --whatsapp-green: #25D366;
 }
+.product-img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+}
 strong {
     color: var(--primary-color);
     font-size: 17px;
+}
+.intro {
+    font-family: 'Exo', sans-serif; font-size: 15px; font-weight: 600;
+    background: var(--secondary-color);
+    color: var(--white-color); padding: 1rem;
+    border-bottom-left-radius: 1.5rem; border-bottom-right-radius: 1.5rem;
+    padding-bottom: 5.5rem;
+}
+.intro span {
+    color: var(--transparent-green);
+    text-shadow: 0 1px 4px var(--accent-color);
+}
+.fa-location-dot {
+    color: rgb(224, 116, 116);
+}
+.fa-phone {
+    color: var(--primary-color);
 }

@@ -1,44 +1,71 @@
-
-.intro {
-    font-family: 'Exo', sans-serif; font-size: 16px;
+.service-container {
+    margin-top: -5rem;
 }
-.intro span {
-    color: var(--primary-color);
+.service-inner-container {
+    background-color: var(--secondary-color);
+    border-radius: 1.5rem;
+}
+.main-services {
+    background: var(--background-color);
+    border-radius: 1.5rem;
 }
 .services-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
-    background: rgb(254, 254, 254);
 }
 @media screen and (max-width: 767px) {
     .services-list {
         grid-template-columns: 1fr;
     }
 }
-.services-wrapper .headers {
+.core-header {
     font-family: 'Glory', sans-serif; font-size: 23px;
-    color: var(--primary-color); text-align: center;
-    text-shadow: 0px 0px 5px var(--shadow-color); margin-bottom: 0px; 
+    color: var(--accent-color);
+    text-shadow: 0 1px 2px var(--primary-color);margin-bottom: 5px; 
+}
+.others-header {
+    font-family: 'Glory', sans-serif; font-size: 20px;
+    color: var(--white-color); text-align: center;margin-bottom: 0px; 
+}
+.service-wrapper { 
+    background-color: rgba(22, 90, 42, 0.6); color: var(--white-color); border-radius: 1rem;
 }
 .service {
-    font-family: 'Roboto', sans-serif; font-size: 15px;
-    background-color: var(--background-color); color: var(--text-color);
-    padding: 1rem; border-radius: 0.5rem; border-left: 2px solid var(--secondary-color);
+    font-family: 'Exo', sans-serif; font-size: 15px;
+    padding: 1rem; border: 2px solid var(--secondary-color); border-radius: 1.5rem; height: 100%;
     display: flex; flex-direction: column; gap: 1rem; justify-content: space-between;
-    box-shadow: 1px 1px 8px var(--shadow-color);
+    background-color: rgba(22, 90, 42, 0.7); color: var(--white-color); box-shadow: 1px 1px 10px var(--shadow-color);
+}
+.service span {
+    font-weight: 700; font-size: 16px;
+    color: var(--accent-color);
+}
+.core-service-wrap {
+    border-radius: 1.5rem;
+    box-shadow: 1px 1px 10px var(--shadow-color);
+}
+.hijama-service {
+    background: url(./hijama.webp) no-repeat center center/cover;
+}
+.bee-venom-service {
+    background: url(./bee-venom.webp) no-repeat center center/cover;
+}
+.sauna-service {
+    background: url(./sauna.webp) no-repeat center center/cover;
+}
+.arteracare-service {
+    background: url(./arteracare.webp) no-repeat center center/cover;
+}
+.additional-services {
+    background: url(./consultation.webp) no-repeat center center/cover;
+    max-width: 671px;
 }
 .benefits {
     font-family: 'Glory', sans-serif; font-size: 16px;
-    background-color: var(--light-bg); color: var(--text-color);
+    background-color: rgba(22, 90, 42, 0.6); color: var(--white-color);
     padding: 1rem;
-    border-radius: 0.5rem; border: 2px solid var(--primary-color);
-    box-shadow: 0px 0px 3px var(--shadow-color);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.benefits:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 8px var(--shadow-color);
+    border-radius: 0.5rem; border: 2px solid var(--secondary-color);
 }
 .benefits ul {
     list-style: none;

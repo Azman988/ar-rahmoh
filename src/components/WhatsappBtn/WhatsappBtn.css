@@ -1,0 +1,11 @@
+.wa-link {
+    background-color: #25D366; color: white;
+    font-size: 15px; font-family: 'Roboto', arial; font-weight: 500;
+    padding: 10px; border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.wa-link:hover {
+    background-color: #25D366;
+    color: aliceblue;
+    transform: translateY(-2px);
+}
