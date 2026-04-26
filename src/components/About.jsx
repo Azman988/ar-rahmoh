@@ -83,7 +83,7 @@ export const About = () => {
             <div className="d-flex flex-column align-items-center justify-content-center text-center c-t-a">
                 <h5 className="mb-3">Contact Us</h5>
                 <p className="cta">If you have any questions, feedback, or inquiries about our products and services, please don't hesitate to contact us. We are here to help and support you on your wellness journey.</p>
-                <Link to="/ar-rahmoh/contact#appointment" className="btn cta-btn">Get in Touch</Link>
+                <Link to="/contact#appointment" className="btn cta-btn">Get in Touch</Link>
             </div>
         </section>
     );

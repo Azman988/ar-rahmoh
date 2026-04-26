@@ -18,11 +18,11 @@ function App() {
       <ScrollToTop />
 
         <Routes>
-          <Route path='/ar-rahmoh/' element={<HomePage />} />
-          <Route path='/ar-rahmoh/product' element={<Product />} />
-          <Route path='/ar-rahmoh/service' element={<Service />} />
-          <Route path='/ar-rahmoh/about' element={<About />} />
-          <Route path='/ar-rahmoh/contact' element={<Contact />} />
+          <Route path='/' element={<HomePage />} />
+          <Route path='/product' element={<Product />} />
+          <Route path='/service' element={<Service />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/contact' element={<Contact />} />
         </Routes>
 
       <Footer />

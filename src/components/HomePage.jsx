@@ -23,8 +23,8 @@ export function HomePage() {
                             • Medications | Holistic Supplements | Prophetic Medicine •
                         </div>
                         <div className="cta-buttons">
-                            <Link to="/ar-rahmoh/product" className="shop-btn me-2">SHOP NOW</Link>
-                            <Link to="/ar-rahmoh/about" className="learn-btn">LEARN MORE</Link>
+                            <Link to="/product" className="shop-btn me-2">SHOP NOW</Link>
+                            <Link to="/about" className="learn-btn">LEARN MORE</Link>
                         </div>
                     </div>
                 </div>
@@ -79,8 +79,8 @@ export function HomePage() {
                         </div>
                     </div>
                     <div className="w-100 mt-5 text-end d-flex align-items-center justify-content-end gap-2">
-                        <Link to="/ar-rahmoh/about" className="about-btn">Know Us More</Link>
-                        <Link to="/ar-rahmoh/contact" className="contact-btn">Reach Us</Link>
+                        <Link to="/about" className="about-btn">Know Us More</Link>
+                        <Link to="/contact" className="contact-btn">Reach Us</Link>
                     </div>
                 </div>
                 <div className="col-md-6 col-12 position-relative banner-image">
@@ -105,7 +105,7 @@ export function HomePage() {
                     })}
                 </div>
                 <div className='text-center mt-4 mb-2'>
-                    <Link to="/ar-rahmoh/product" className='btn btn-success'>View all Products</Link>
+                    <Link to="/product" className='btn btn-success'>View all Products</Link>
                 </div>
             </section>
 
@@ -129,7 +129,7 @@ export function HomePage() {
                         Expert Health Consultation
                     </div>
                 </div>
-                <Link to="/ar-rahmoh/service" className='btn btn-success'>View all Services</Link>
+                <Link to="/service" className='btn btn-success'>View all Services</Link>
             </section>
 
             <Feedback home={true} />

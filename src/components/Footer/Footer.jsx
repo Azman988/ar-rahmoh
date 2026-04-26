@@ -10,7 +10,7 @@ export function Footer() {
                 <div className='col-8 w-md-100 w-xl-75 d-flex flex-column flex-md-row align-items-stretch justify-content-between gap-4 footer-info'>
                     <div>
                             {/* Logo */}
-                        <Link to="/ar-rahmoh/" end="true" className='d-flex align-items-center text-decoration-none logo-link'>
+                        <Link to="/" end="true" className='d-flex align-items-center text-decoration-none logo-link'>
                             <img alt="arRahmoh-logo" src={Logo} style={{width: 55, height: 55, borderRadius: 10}} />
                             <div className='ms-2 text-white d-flex flex-column fw-bold logo-text'>
                                 <span>Ar-Rahmon Islamic Cure <br />
@@ -30,11 +30,11 @@ export function Footer() {
                     <div className='Links'>
                         <h6>Quick Links</h6>
                         <div className='d-flex flex-column gap-1 ms-2'>
-                            <Link to="/ar-rahmoh/" className='text-white'>Home</Link> 
-                            <Link to="/ar-rahmoh/product" className='text-white'>Products</Link> 
-                            <Link to="/ar-rahmoh/service" className='text-white'>Services</Link> 
-                            <Link to="/ar-rahmoh/about" className='text-white'> About Us</Link> 
-                            <Link to="/ar-rahmoh/contact" className='text-white'> Contact Us</Link>
+                            <Link to="/" className='text-white'>Home</Link> 
+                            <Link to="/product" className='text-white'>Products</Link> 
+                            <Link to="/service" className='text-white'>Services</Link> 
+                            <Link to="/about" className='text-white'> About Us</Link> 
+                            <Link to="/contact" className='text-white'> Contact Us</Link>
                         </div>
                     </div>
                         {/* Contact Information */}

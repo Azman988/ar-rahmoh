@@ -156,7 +156,7 @@ export function Service() {
             <div className="d-flex flex-column align-items-center justify-content-center text-center py-3 px-3 c-t-a">
                 <p className="p-0">Experience the healing power of nature with <span className="fw-bold">Ar-Rahmoh Islamic Cure.</span> To book any of our services, schedule an Appointment for Consultation by clicking the button below. 
                 "Your health and well-being, our top priorities."</p>
-                <Link to="/ar-rahmoh/contact" className="btn cta-btn" >Schedule Appointment</Link>
+                <Link to="/contact" className="btn cta-btn" >Schedule Appointment</Link>
             </div>
 
         </section>
