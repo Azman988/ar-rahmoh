@@ -46,19 +46,19 @@
     box-shadow: 1px 1px 10px var(--shadow-color);
 }
 .hijama-service {
-    background: url(./hijama.webp) no-repeat center center/cover;
+    background: url(../assets/hijama.webp) no-repeat center center/cover;
 }
 .bee-venom-service {
-    background: url(./bee-venom.webp) no-repeat center center/cover;
+    background: url(../assets/bee-venom.webp) no-repeat center center/cover;
 }
 .sauna-service {
-    background: url(./sauna.webp) no-repeat center center/cover;
+    background: url(../assets/sauna.webp) no-repeat center center/cover;
 }
 .arteracare-service {
-    background: url(./arteracare.webp) no-repeat center center/cover;
+    background: url(../assets/arteracare.webp) no-repeat center center/cover;
 }
 .additional-services {
-    background: url(./consultation.webp) no-repeat center center/cover;
+    background: url(../assets/consultation.webp) no-repeat center center/cover;
     max-width: 671px;
 }
 .benefits {
