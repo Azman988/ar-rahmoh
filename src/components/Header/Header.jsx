@@ -52,7 +52,7 @@ export function Header() {
             <div className={`position-fixed top-0 end-0 d-flex flex-column align-items-center sideNav ${menu === false ? '' : 'show'}`} id="sideNav">
                 <div className="sticky-top d-flex align-items-center justify-content-between py-3 border-bottom border-white side-header">
                     {/* Close Button */}
-                    <button onClick={() => { setMenu(false) }} className="btn close-btn" id="close-btn">
+                    <button onClick={() => { setMenu(false) }} className="btn d-flex align-items-center justify-content-center close-btn">
                         <i className="fas fa-times"></i>
                     </button>
                 </div>

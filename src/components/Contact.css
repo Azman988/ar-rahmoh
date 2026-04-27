@@ -4,12 +4,13 @@
     text-shadow: 0 1px 1px var(--primary-color);
 }
 .location-container,
-.appointment-container {
-    max-width: 700px;
+.appointment-container,
+.support-container {
+    max-width: 800px;
+    padding: 1rem 1.2rem; border-radius: 0.5rem;
 }
 .location-container {
     background: var(--background-color);
-    padding: 1rem 1.2rem; border-radius: 1rem;
 }
 .location-container p {
     color: var(--text-color);
@@ -44,9 +45,12 @@
 .contact-details li a:hover {
     text-decoration: underline;
 }
+.support-container {
+    background-color: var(--light-bg);
+    font-family: "Roboto", serif;
+}
 .appointment-container {
     background: var(--light-bg);
-    padding: 1rem 1.2rem; border-radius: 0.4rem;
 }
 .appointment-container .caution {
     background: var(--background-color); color: var(--text-color);
@@ -57,4 +61,8 @@
 .appointment-container .caution span {
     color: var(--primary-color);
     font-weight: 650;
+}
+#appointment,
+#support {
+    scroll-margin-top: var(--header-height);
 }

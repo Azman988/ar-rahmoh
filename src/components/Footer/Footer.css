@@ -22,7 +22,7 @@ footer a:hover {
 .logo-link .logo-text {
     transition: color 0.3s ease; 
     font-family: 'Glory', sans-serif; font-size: 17px;
-    line-height: 23px;
+    line-height: 23px; text-wrap: nowrap;
 }
 .logo-link:hover .logo-text {
      font-weight: bold !important;

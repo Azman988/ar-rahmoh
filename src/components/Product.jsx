@@ -9,7 +9,7 @@ export function Product() {
                 <img src="./product.webp" alt="product" className="w-100 img-fluid" style={{ height: '100px', objectFit: 'cover' }} />
             </div>
 
-            <div className="text-center px-md-5 px-3 pt-4 intro">Our list of products comprises herbal solutions, spiritual & holistic remedies, dietetics, e.t.c which all products are 100% natural.</div>
+            <div className="text-center px-md-5 px-3 pt-4 intro">Our products list comprises a wide range of medications including herbal solutions, spiritual & holistic remedies, dietetics, e.t.c. All products are 100% natural.</div>
 
             <div className='product-grid-wrapper'>
                 <h6 className='header'>Shop Now</h6>

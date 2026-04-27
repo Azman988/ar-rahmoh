@@ -13,13 +13,13 @@
 }
 .banner-content h1 {
     font-size: 2rem; font-weight: 800;
-    line-height: 1.2;
+    line-height: 1.2; text-shadow: 1px 4px 10px var(--accent-color) !important;
     letter-spacing: 1px;
     font-family: "Exo";
 }
 .description {
     font-size: 1.1rem;
-    line-height: 1.6;
+    line-height: 1.5;
     opacity: 0.9;
     font-family: "Glory" !important;
 }
@@ -61,8 +61,8 @@
     text-align: center;
     display: flex; flex-direction: column; align-items: center !important;
     background-color: #fafaf9;
-    padding: 40px 20px 20px; border-radius: 30px;
-    box-shadow: 0px 0px 0.3rem 1px var(--secondary-color);
+    padding: 40px 20px 20px; border: 0.05rem solid var(--primary-color); border-radius: 30px;
+    box-shadow: 2px 4px 3px 1px var(--shadow-color);
 }
 .pillar-icon {
     margin-top: -60px;
@@ -181,7 +181,7 @@
  }
  .product-container {
     background: var(--light-bg);
-    scrollbar-width: none;
+    scrollbar-width: thin !important;
  }
 /* Service */
 .service-section {
@@ -195,7 +195,7 @@
 .services-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
+    gap: 20px;
     max-width: 900px;
     margin: 40px auto;
     padding: 0 20px;
@@ -208,7 +208,7 @@
     display: flex;
     align-items: center;
     padding: 10px;
-    box-shadow: 1px 1px 3px var(--text-color);
+    box-shadow: 2px 4px 3px 1px var(--shadow-color);
     border-radius: 15px;
 }
 .services span {
@@ -232,5 +232,8 @@
     .services-container {
         grid-template-columns: 1fr !important; 
         padding: 0 50px;
+    }
+    .home {
+        min-height: fit-content !important;
     }
 }

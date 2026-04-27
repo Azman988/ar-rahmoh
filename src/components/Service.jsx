@@ -1,4 +1,5 @@
 import { Link } from "react-router"
+import { HashLink } from "react-router-hash-link"
 import './Service.css'
 
 export function Service() {
@@ -146,17 +147,22 @@ export function Service() {
 
                     <h5 className="fw-bold mt-3 others-header">We also offer</h5>
                     <div className="p-3 services-list">
-                        <div className="service"><span>Natural Product Sales:</span> We offer a wide range of high-quality herbal products, including dietetics, teas, and tinctures, all crafted from natural ingredients.</div>
-
-                        <div className="service"><span>Health Workshops and Seminars:</span> We host regular workshops and seminars to educate our community about the benefits of herbal medicine and how to incorporate it into their daily lives.</div>
+                        <div className="service"><span>Natural Product Sales:</span> 
+                            <div>
+                                We offer a wide range of high-quality medical products, including herbs, teas, tinctures, cosmetics, dietetics, e.t.c all crafted from natural ingredients. <Link to="/product">Shop here</Link></div>
+                            </div>
+                        <div className="service"><span>Health Workshops and Seminars:</span> 
+                            <div>
+                                We host regular workshops and seminars to educate our community about the benefits of herbal medicine and how to incorporate it into their daily lives. <HashLink to="/contact#support">Know more</HashLink>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div className="d-flex flex-column align-items-center justify-content-center text-center py-3 px-3 c-t-a">
-                <p className="p-0">Experience the healing power of nature with <span className="fw-bold">Ar-Rahmoh Islamic Cure.</span> To book any of our services, schedule an Appointment for Consultation by clicking the button below. 
-                "Your health and well-being, our top priorities."</p>
-                <Link to="/contact" className="btn cta-btn" >Schedule Appointment</Link>
+                <p className="p-0">Experience the healing power of nature with <span className="fw-bold">Ar-Rahmoh Islamic Cure.</span> To book any of our core services, schedule an Appointment for Consultation by clicking the button below.</p>
+                <HashLink smooth to="/contact#appointment" className="btn cta-btn" >Schedule Appointment</HashLink>
             </div>
 
         </section>

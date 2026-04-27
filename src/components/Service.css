@@ -41,6 +41,10 @@
     font-weight: 700; font-size: 16px;
     color: var(--accent-color);
 }
+.service a {
+    color: var(--accent-color);
+    font-size: 14px;
+}
 .core-service-wrap {
     border-radius: 1.5rem;
     box-shadow: 1px 1px 10px var(--shadow-color);

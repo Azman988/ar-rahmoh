@@ -16,11 +16,11 @@ export function HomePage() {
                             <p className=" fs-2 m-0">Welcome to</p>
                             <h1 className="fw-bold">AR-RAHMOH ISLAMIC CURE & BLOOD CUPPING THERAPY LTD</h1>
                             <p className="m-0 description">
-                                Your Trusted Source for Modern Wellness & Prophetic Medicine
+                                Your Trusted Source for Modern Wellness & Sunnatic Medicines
                             </p>
                         </div>
                         <div className="my-3 mb-4 fw-bold description">
-                            • Medications | Holistic Supplements | Prophetic Medicine •
+                            • Medications | Holistic Supplements | Sunnatic Medicines •
                         </div>
                         <div className="cta-buttons">
                             <Link to="/product" className="shop-btn me-2">SHOP NOW</Link>
