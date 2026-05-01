@@ -29,7 +29,7 @@ strong {
     padding-bottom: 5.5rem;
 }
 .intro span {
-    color: var(--transparent-green);
+    color: var(--text-color);
     text-shadow: 0 1px 4px var(--accent-color);
 }
 .fa-location-dot {
@@ -37,4 +37,9 @@ strong {
 }
 .fa-phone {
     color: var(--primary-color);
+}
+.rc-code {
+    font-weight: bold !important;
+    color: var(--text-color) !important;
+    text-shadow: 0 1px 4px var(--accent-color) !important;
 }
