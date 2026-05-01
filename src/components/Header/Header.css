@@ -6,15 +6,27 @@ nav {
     box-shadow: 0 0px 4px var(--primary-color);
 }
 /* Header navigations */
-.navbar-toggler, .close-btn {
+.open-menu, .close-menu {
     color: var(--white-color) !important;
-    padding: 0.5rem 10px !important;
+    padding: 0.3rem 10px !important;
     border: 1px solid var(--white-color) !important;
     transition: background 0.4s ease;
 }
-.navbar-toggler:active, .navbar-toggler:focus, .navbar-toggler:focus-visible {
-    outline: none !important;
-    box-shadow: none !important;
+.close-menu {
+    padding: 10px 9px !important;
+    border-radius: 100%;
+    display: flex; align-items: center !important; justify-content: center !important;
+}
+.open-menu:hover, 
+.nav-link:hover {
+    color: var(--white-color) !important;
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color)!important;
+}
+.close-menu:hover {
+    color: var(--white-color) !important;
+    background-color: rgb(156, 32, 32) !important;
+    border-color: var(--primary-color)!important;
 }
 .nav-link {
     color: var(--white-color) !important;
@@ -23,49 +35,36 @@ nav {
     border-radius: 10px !important;
     transition: 0.4s ease;
 }
-.close-btn {
-    padding: 10px !important;
-    border-radius: 100%;
-}
-.close-btn:hover {
-    color: var(--white-color) !important;
-    background-color: red !important;
-    border-color: var(--primary-color)!important;
-}
-.navbar-toggler:hover, 
-.nav-link:hover {
-    color: var(--white-color) !important;
-    background-color: var(--primary-color) !important;
-    border-color: var(--primary-color)!important;
-}
 .nav-link.active {
     background-color: var(--primary-color) !important;
-    border-bottom: 2px solid var(--accent-color);
+    border-bottom: 1px solid var(--accent-color);
 }
 /* Side Navigation */
 .sideNav {
-    width: 0px;
-    height: 100vh !important;
+    width: 0; height: fit-content !important;
+    top: 65px !important; right: 20px !important;
+    border-radius: 15px;
     transition: width 0.3s ease;
     z-index: 9999 !important;
     background: var(--secondary-color) !important;
-    overflow-y: auto;
-    box-shadow: 1px 0 4px var(--primary-color);
-}
-.side-header {
-    background: var(--secondary-color);
+    overflow-y: auto !important;
+    box-shadow: 0 0 10px var(--primary-color);
 }
 .sideNav ul,
 .side-header {
     width: 90% !important;
 }
 .show {
-    width: 300px !important;
+    width: 280px !important;
 }
 .call-btn, 
 .mobile-call-btn {
-    background: var(--background-color); 
+    background: var(--light-bg) !important; 
     color: var(--primary-color);
+    padding: 0.5rem 1rem; border-radius: 20px !important;
+    font-weight: 500 !important;
+    display: flex; align-items: center; justify-content: center;
+    gap: 0.5rem; text-decoration: none;
 }
 
 @media screen and (max-width: 767px) {
@@ -74,7 +73,8 @@ nav {
     }
 }
 @media screen and (min-width: 767px) {
-    #sideNav {
+    #sideNav, .nav-control, .show {
         width: 0px !important;
+        display: none !important;
     }
 }

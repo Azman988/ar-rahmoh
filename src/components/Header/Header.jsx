@@ -1,10 +1,23 @@
 import { Link, NavLink } from 'react-router'
-import { useState } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import Logo from '../../assets/ar-Rahmoh-logo.webp'
 import './Header.css'
+import { SideNav } from '../SideNav/SideNav';
 
 export function Header() {
-    const [menu, setMenu] = useState(false)
+    const [open, setOpen] = useState(false);
+    const menu = useRef(null);
+    const switchRef = useRef(null);
+
+    useEffect(() => {
+        const handler = (e) => {
+            if (open && menu.current && !menu.current.contains(e.target) && switchRef.current && !switchRef.current.contains(e.target))  setOpen(false)
+        }
+
+        document.addEventListener('mousedown', handler);
+
+        return () => {document.removeEventListener('mousedown', handler)}
+    })
 
     return (
         <nav className="sticky-top navbar p-1 navbar-expand-md" >
@@ -18,9 +31,15 @@ export function Header() {
                 <div className='d-flex align-items-center gap-4'>
                     {/* Desktop Nav Links */}
                     <div className="d-flex align-items-center gap-3">
-                        <button onClick={() => { setMenu(true) }} className="btn ms-2 navbar-toggler">
-                            <i className="fa-solid fa-list-ul"></i>
-                        </button>
+                        {/* Nav Control */}
+                        <div className='nav-control'>
+                            {open === true ? <button onClick={() => setOpen(false)} className="btn ms-2 fs-6 close-menu" ref={switchRef}>
+                                <i className="fas fa-times fs-5"></i>
+                            </button> : <button onClick={() => setOpen(true)} className="btn ms-2 fs-5 open-menu">
+                                <i className="fa-solid fa-list-ul"></i>
+                            </button>}
+                        </div>
+                        
                         {/* Navbar Links */}
                         <div className="collapse navbar-collapse flex-grow-0" id="navbarNav">
                             <ul className="navbar-nav text-white gap-2">
@@ -42,44 +61,14 @@ export function Header() {
                             </ul>
                         </div>
                     </div>
-                    <a href="tel:09046088723" className="d-flex align-items-center justify-content-center gap-2 py-2 px-3 rounded-3 text-decoration-none call-btn" target="_blank">
-                        <i className="fa-solid fa-phone fs-5"></i>Call Now
+                    <a href="tel:09046088723" className="call-btn" target="_blank">
+                        <i className="fa-solid fa-phone fs-5"></i>Call Us
                     </a>
                 </div>
                 
             </div>
             {/* Mobile Navbar */}
-            <div className={`position-fixed top-0 end-0 d-flex flex-column align-items-center sideNav ${menu === false ? '' : 'show'}`} id="sideNav">
-                <div className="sticky-top d-flex align-items-center justify-content-between py-3 border-bottom border-white side-header">
-                    {/* Close Button */}
-                    <button onClick={() => { setMenu(false) }} className="btn d-flex align-items-center justify-content-center close-btn">
-                        <i className="fas fa-times"></i>
-                    </button>
-                </div>
-                {/* Navbar Links */}
-                <ul className="navbar-nav gap-5 py-5 px-4 w-100 border-bottom border-white">
-                    <li className="nav-item">
-                        <NavLink to="/" onClick={() => { setMenu(false) }} className="nav-link text-center" end="false">Home</NavLink>
-                    </li>
-                    <li className="nav-item">
-                        <NavLink to="/product" onClick={() => { setMenu(false) }} className="nav-link text-center">Products</NavLink>
-                    </li>
-                    <li className="nav-item">
-                        <NavLink to="/service" onClick={() => { setMenu(false) }} className="nav-link text-center">Services</NavLink>
-                    </li>
-                    <li className="nav-item">
-                        <NavLink to="/about" onClick={() => { setMenu(false) }} className="nav-link text-center">About</NavLink>
-                    </li>
-                    <li className="nav-item">
-                        <NavLink to="/contact" onClick={() => { setMenu(false) }} className="nav-link text-center">Contact</NavLink>
-                    </li>
-                </ul>
-                <div className="w-100 d-flex align-items-center justify-content-center px-3 my-3">
-                    <a href="tel:09046088723" className="d-flex align-items-center justify-content-center gap-2 py-2 px-3 rounded-2 text-decoration-none bg-white fw-bold mt-2 mobile-call-btn" target="_blank">
-                        <i className="fa-solid fa-phone fs-5"></i>Call Now
-                    </a>
-                </div>
-            </div>
+            <SideNav open={open} setOpen={setOpen} menu={menu} />
         </nav>
     )
 }
