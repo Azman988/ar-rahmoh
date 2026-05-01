@@ -5,6 +5,9 @@ import './Footer.css'
 export function Footer() {
     return(
         <footer className='pt-5 pb-3 px-4 px-md-5 position-relative'>
+            <div className="p-2 fs-6 pe-none position-absolute top-0 end-0 rc-code">
+                    RC.6882869
+            </div>
             <div className='d-flex flex-column flex-xl-row gap-3 align-items-stretch justify-content-between'>
                 {/* Footer Info */}
                 <div className='col-8 w-md-100 w-xl-75 d-flex flex-column flex-md-row align-items-stretch justify-content-between gap-4 footer-info'>
@@ -29,7 +32,7 @@ export function Footer() {
                         {/* Links */}
                     <div className='Links'>
                         <h6>Quick Links</h6>
-                        <div className='d-flex flex-column gap-1 ms-2'>
+                        <div className='d-flex flex-column gap-2 ms-2'>
                             <Link to="/" className='text-white'>Home</Link> 
                             <Link to="/product" className='text-white'>Products</Link> 
                             <Link to="/service" className='text-white'>Services</Link> 
@@ -40,13 +43,27 @@ export function Footer() {
                         {/* Contact Information */}
                     <div>
                         <h6>Contact Information</h6>
+                        <div className='mb-1'>
+                            <p className='mb-0 text-white'>Our Head Office:</p>
+
+                            <p className='mb-0 ms-1 text-white location-address'><span><i className="fa-solid fa-location-dot"></i> </span> Iwo, Osun State, Nig.</p>
+                        </div>
                         <div className='mb-2'>
-                            <p className='mb-1 text-white'>Our Head Office:</p>
-                            <p className='mb-0 text-white location-address'><span><i className="fa-solid fa-location-dot"></i> </span> Iwo, Osun State, Nig.</p>
+                            <p className='mb-0 text-white'>Contact: </p>
+
+                            <a href="tel:09046088723" className='text-white ms-1'><span><i className="fa-solid fa-phone"></i> </span> 0904 608 8723</a>
                         </div>
                         <div>
-                            <p className='mb-1 text-white'>Contact: </p>
-                            <a href="tel:09046088723" className='text-white'><span><i className="fa-solid fa-phone"></i> </span> 0904 608 8723</a>
+                            <h6>Follow Us</h6>
+                            <div className='d-flex gap-3 social-handles'>
+                                <a href="https://www.instagram.com/ar.rahmoh.cure/">
+                                    <i className="fa-brands fa-instagram"></i>
+                                </a>
+
+                                <a href="https://www.tiktok.com/@ar.rahmoh.cure?is_from_webapp=1&sender_device=pc">
+                                    <i className="fa-brands fa-tiktok"></i>
+                                </a>
+                            </div>
                         </div>
                     </div> 
                 </div>
@@ -60,7 +77,7 @@ export function Footer() {
             </div>
                 {/* Copyright */}
             <div>
-                <p className='mb-1 mt-3 text-center text-white'>© 2024 <span className='fw-bold'>Ar-Rahmoh Islamic Cure & Blood Cupping Therapy Ltd</span>. All rights reserved.</p>
+                <p className='mb-1 mt-4 text-center text-white'>© 2024 <span className='fw-bold'>Ar-Rahmoh Islamic Cure & Blood Cupping Therapy Ltd</span>. All rights reserved.</p>
             </div>
         </footer>
     )

@@ -21,8 +21,8 @@
     padding-left: 1rem; border-left: 2px dashed var(--primary-color);
 }
 .descriptions span {
-    color: var(--primary-color);
-    font-weight: 650;
+    color: var(--primary-color) !important;
+    font-weight: 650 !important;
 }
 .values-list > div {
     display: flex;
@@ -32,15 +32,11 @@
 .values-list > div span {
     color: var(--checkmark-color);
 }
-.content-wrapper .caution {
-    padding: 0.5rem 1.2rem 0.5rem 0.5rem; margin-left: 30px; text-align: center;
+.content-wrapper .license {
+    padding: 0.5rem;
     color: var(--text-color);
     font-size: 0.9rem;
     font-family: 'Glory', serif;
-}
-.content-wrapper .caution span {
-    color: rgb(207, 67, 67);
-    font-weight: 650;
 }
 .about .c-t-a {
     width: 100%;

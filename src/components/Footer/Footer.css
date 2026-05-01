@@ -3,7 +3,7 @@ footer {
 }
 footer h6 {
     font-family: 'Glory', sans-serif; font-weight: bold; font-size: 18px;
-    color: var(--primary-color);
+    color: var(--text-color);
     text-shadow: 0 1px 4px var(--accent-color);
     text-wrap: nowrap; pointer-events: none;
 }
@@ -25,15 +25,22 @@ footer a:hover {
     line-height: 23px; text-wrap: nowrap;
 }
 .logo-link:hover .logo-text {
-     font-weight: bold !important;
-    color: var(--accent-color) !important;
-    text-shadow: 0 1px 3px var(--primary-color) !important;
+    font-weight: bold !important;
+    color: var(--text-color) !important;
+    text-shadow: 0 1px 3px var(--accent-color) !important;
 }
 footer .motto {
     width: fit-content; text-wrap: nowrap;
     font-style: oblique; pointer-events: none;
     background-color: var(--primary-color); 
     color: var(--accent-color);
+}
+.social-handles a {
+    color: var(--white-color);
+    transition: color 0.3s ease;
+}
+.social-handles a:hover {
+    color: var(--accent-color) !important;
 }
 .appreciation p {
     font-size: 14px;

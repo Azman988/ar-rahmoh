@@ -5,7 +5,6 @@ import WhatsAppOrderBtn from './WhatsappBtn/WhatsappBtn'
 import './HomePage.css'
 import { Feedback } from './Feedback/Feedback'
 
-
 export function HomePage() {
     return (
         <>
@@ -16,11 +15,11 @@ export function HomePage() {
                             <p className=" fs-2 m-0">Welcome to</p>
                             <h1 className="fw-bold">AR-RAHMOH ISLAMIC CURE & BLOOD CUPPING THERAPY LTD</h1>
                             <p className="m-0 description">
-                                Your Trusted Source for Modern Wellness & Sunnatic Medicines
+                                Your Trusted Source for Modern Wellness, Sunnatic Healings & Herbal Medications
                             </p>
                         </div>
                         <div className="my-3 mb-4 fw-bold description">
-                            • Medications | Holistic Supplements | Sunnatic Medicines •
+                            • Herbal Medications | Holistic Supplements | Sunnatic Healings •
                         </div>
                         <div className="cta-buttons">
                             <Link to="/product" className="shop-btn me-2">SHOP NOW</Link>

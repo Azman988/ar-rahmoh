@@ -1,4 +1,5 @@
 import { Link } from "react-router";
+import { HashLink } from "react-router-hash-link";
 import './About.css'
 import { Feedback } from "./Feedback/Feedback";
 
@@ -74,7 +75,10 @@ export const About = () => {
                         </div>
                     </div>
 
-                    <p className="caution"><span className="fw-bold">Caution!</span> All our services are humanity first focused, we welcome and respect all types of faith that comes for treatment. Your healthy and well-being, Our priority.</p>
+                    <div className="text-center w-100 license">
+                        <h5 className="headers">License:</h5> 
+                        <p className="description">Ar-Rahmoh Islamic Cure and Blood Cupping Therapy Ltd is registered with the Corporate Affiars Commission (CAC) with <span className="rc-code">RC.6882869</span></p>
+                    </div>
                 </div>
             </div>
 
@@ -83,7 +87,7 @@ export const About = () => {
             <div className="d-flex flex-column align-items-center justify-content-center text-center c-t-a">
                 <h5 className="mb-3">Contact Us</h5>
                 <p className="cta">If you have any questions, feedback, or inquiries about our products and services, please don't hesitate to contact us. We are here to help and support you on your wellness journey.</p>
-                <Link to="/contact#appointment" className="btn cta-btn">Get in Touch</Link>
+                <HashLink to="/contact#appointment" className="btn cta-btn">Get in Touch</HashLink>
             </div>
         </section>
     );
