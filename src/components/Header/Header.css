@@ -2,64 +2,37 @@ nav {
     backdrop-filter: blur(20px) !important;
 }
 .navbar-container {
-    background: var(--secondary-color);
-    box-shadow: 0 0px 4px var(--primary-color);
+    background: var(--primary-color);
+    box-shadow: 0 0px 3px var(--secondary-color);
 }
+.cart-icon span { top: 10px; left: 40px; height: 23px; width: 23px; }
 /* Header navigations */
-.open-menu, .close-menu {
-    color: var(--white-color) !important;
-    padding: 0.3rem 10px !important;
-    border: 1px solid var(--white-color) !important;
-    transition: background 0.4s ease;
-}
-.close-menu {
-    padding: 10px 9px !important;
-    border-radius: 100%;
-    display: flex; align-items: center !important; justify-content: center !important;
-}
-.open-menu:hover, 
-.nav-link:hover {
-    color: var(--white-color) !important;
-    background-color: var(--primary-color) !important;
-    border-color: var(--primary-color)!important;
-}
-.close-menu:hover {
-    color: var(--white-color) !important;
-    background-color: rgb(156, 32, 32) !important;
-    border-color: var(--primary-color)!important;
-}
 .nav-link {
-    color: var(--white-color) !important;
+    color: white !important;
     font-weight: 500;
     padding: 0.375rem 15px !important;
-    border-radius: 10px !important;
+    border-radius: 15px !important;
     transition: 0.4s ease;
 }
-.nav-link.active {
-    background-color: var(--primary-color) !important;
-    border-bottom: 1px solid var(--accent-color);
+.nav-link:hover, .nav-link.active {
+    background-color: var(--secondary-color) !important;
 }
 /* Side Navigation */
 .sideNav {
-    width: 0; height: fit-content !important;
-    top: 65px !important; right: 20px !important;
+    transform: translateY(0); width: 250px; height: fit-content !important;
+    top: 85px !important; right: 20px !important;
     border-radius: 15px;
-    transition: width 0.3s ease;
     z-index: 9999 !important;
-    background: var(--secondary-color) !important;
-    overflow-y: auto !important;
-    box-shadow: 0 0 10px var(--primary-color);
+    background: var(--primary-color) !important;
+    box-shadow: 0 0 4px var(--primary-color);
 }
 .sideNav ul,
 .side-header {
     width: 90% !important;
 }
-.show {
-    width: 280px !important;
-}
 .call-btn, 
 .mobile-call-btn {
-    background: var(--light-bg) !important; 
+    background: rgb(248, 249, 250) !important; 
     color: var(--primary-color);
     padding: 0.5rem 1rem; border-radius: 20px !important;
     font-weight: 500 !important;
@@ -73,8 +46,12 @@ nav {
     }
 }
 @media screen and (min-width: 767px) {
-    #sideNav, .nav-control, .show {
-        width: 0px !important;
+    .nav-control {
+        display: none !important;
+    }
+    .sideNav {
         display: none !important;
     }
 }
+
+
