@@ -1,68 +1,49 @@
-.contact-page h5 {
-    font-family: 'Glory', sans-serif; font-size: 23px !important;
-    color: var(--accent-color);
-    text-shadow: 0 1px 1px var(--primary-color);
+.contact-hero-banner {
+    height: 180px;
+    background-color: #0b2216;
 }
-.location-container,
-.appointment-container,
-.support-container {
-    max-width: 800px;
-    padding: 1rem 1.2rem; border-radius: 0.5rem;
+.contact-hero-img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.35);
 }
-.location-container {
-    background: var(--background-color);
+.contact-overlay {
+    background: linear-gradient(180deg, transparent 0%, rgba(11, 34, 22, 0.6) 100%);
 }
-.location-container p {
-    color: var(--text-color);
-    font-size: 1.1rem;
-    font-family: 'Glory', serif;
+
+/* Premium Component Cards Layout Structure */
+.clinic-location-card {
+    border-width: 1px;
+    scroll-margin-top: 85px;
 }
-.location-container .hours {
-    color: var(--primary-color);
-    font-size: 1rem; font-weight: 450;
-    font-family: 'roboto', serif;
+.icon-badge-round {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
 }
-.contact-locations h6 {
-    font-weight: 500;
-    font-size: 1.1rem;
-    font-family: 'Exo', serif;
-    margin-bottom: 0.5rem !important;
+.head-office-accent {
+    box-shadow: inset 0 1px 2px rgba(16, 185, 129, 0.05);
 }
-.contact-details ul {
-    list-style: none;
-    padding-left: 0;
-    margin-bottom: 5px;
+
+/* Custom Interactive Links & Button Hover Extensions */
+.hover-underline:hover {
+    text-decoration: underline !important;
 }
-.contact-details li {
-    color: var(--text-color);
-    font-size: 1.1rem;
-    font-family: 'Glory', serif;
+.hover-success:hover {
+    color: #10b981 !important;
 }
-.contact-details li a {
-    color: var(--primary-color);
-    text-decoration: none;
+.btn-outline-success:hover {
+    transform: translateY(-2px);
 }
-.contact-details li a:hover {
-    text-decoration: underline;
+.btn-success:hover {
+    background-color: #059669 !important;
+    transform: translateY(-2px);
 }
-.support-container {
-    background-color: var(--light-bg);
-    font-family: "Roboto", serif;
-}
-.appointment-container {
-    background: var(--light-bg);
-}
-.appointment-container .caution {
-    background: var(--background-color); color: var(--text-color);
-    font-size: 1rem; padding: 0.6rem 10px;
-    border-left: 2px solid red;
-    font-family: 'Glory', serif; 
-}
-.appointment-container .caution span {
-    color: var(--primary-color);
-    font-weight: 650;
-}
-#appointment,
-#support {
-    scroll-margin-top: var(--header-height);
+
+/* Structural Fixes for Ultra Narrow Displays */
+@media (max-width: 575.98px) {
+    .btn-outline-success {
+        width: 100% !important;
+        justify-content: center;
+    }
 }

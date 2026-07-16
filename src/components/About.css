@@ -1,66 +1,43 @@
-.about-container {
-    margin-top: -5rem;
+.about-hero-banner {
+    height: 180px;
+    background-color: #0b2216;
 }
-.content-wrapper {
-    background: var(--background-color) !important;
-    width: 100%; border-radius: 1.5rem;
-    min-height: fit-content;
+.about-hero-img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.35);
 }
-.content-wrapper .headers {
-    color: var(--accent-color);
-    text-shadow: 0 1px 2px var(--primary-color);
-    font-weight: 650;
-    font-size: 1.1rem;
-    font-family: 'Exo', serif;
-    margin-bottom: 0.5rem !important;
+.about-overlay {
+    background: linear-gradient(180deg, transparent 0%, rgba(11, 34, 22, 0.6) 100%);
 }
-.descriptions {
-    color: var(--text-color);
-    font-size: 1rem;
-    font-family: 'Glory', serif;
-    padding-left: 1rem; border-left: 2px dashed var(--primary-color);
+
+.about-info-card {
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+    border-width: 1px;
 }
-.descriptions span {
-    color: var(--primary-color) !important;
-    font-weight: 650 !important;
+.about-info-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0.75rem 2rem rgba(11, 34, 22, 0.05) !important;
+    border-color: rgba(16, 185, 129, 0.2) !important;
 }
-.values-list > div {
-    display: flex;
-    align-items: start;
-    gap: 0.5rem;
+
+/* Bottom Call to Action Card Configurations */
+.about-cta-banner {
+    background: linear-gradient(135deg, #091f14 0%, #040c08 100%);
 }
-.values-list > div span {
-    color: var(--checkmark-color);
+.about-pattern-mask {
+    background-image: radial-gradient(rgba(255, 255, 255, 0.15) 1px, transparent 0);
+    background-size: 20px 20px;
+    pointer-events: none;
 }
-.content-wrapper .license {
-    padding: 0.5rem;
-    color: var(--text-color);
-    font-size: 0.9rem;
-    font-family: 'Glory', serif;
-}
-.about .c-t-a {
-    width: 100%;
-    font-size: 14px;
-    font-family: 'Exo', sans-serif;
-    background: var(--background-color);
-    color: var(--primary-color);
-    margin-top: 20px;
-    padding: 1.3rem 1rem;
-}
-.about .c-t-a h5 {
-    font-family: 'Glory', sans-serif; font-size: 23px;
-    color: var(--accent-color);
-    text-shadow: 0 1px 3px var(--primary-color);
-}
-.about .c-t-a .cta-btn {
-    background-color: var(--primary-color);
-    color: var(--white-color);
+.btn-light-about-cta {
+    background-color: #ffffff;
+    color: #091f14;
     border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
-    transition: background-color 0.3s ease;
+    transition: transform 0.2s ease, background-color 0.2s ease;
 }
-.about .c-t-a .cta-btn:hover {
-    background-color: var(--primary-color);
-    color: var(--white-color);
+.btn-light-about-cta:hover {
+    background-color: #f3f4f6;
+    color: #091f14;
+    transform: translateY(-2px);
 }
