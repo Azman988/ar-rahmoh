@@ -44,7 +44,7 @@ const __dirname = path.dirname(__filename);
 // --- STATIC ASSET RENDER HOSTING PIPELINE ---
 if (process.env.NODE_ENV === 'production') {
     // Tell Express where the compiled production frontend build files live
-    app.use(express.static(path.join(__dirname, './dist')));
+    app.use(express.static(path.resolve(__dirname, 'dist')));
 
     // Direct all non-API routes straight back to React SPA index file
     app.get(/.*/, (req, res) => {
