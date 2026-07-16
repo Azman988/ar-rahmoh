@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: ar-rahmoh-fullstack
+    description: Fullstack MERN application for Ar-Rahom project
+    runtime: node
+    buildCommand: npm run build
+    startCommand: npm run start
+    plan: free
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 5000
+      - key: MONGO_URI
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: CLOUDINARY_CLOUD_NAME
+        sync: false
+      - key: CLOUDINARY_API_KEY
+        sync: false
+      - key: CLOUDINARY_API_SECRET
+        sync: false
