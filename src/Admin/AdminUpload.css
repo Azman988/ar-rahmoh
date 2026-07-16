@@ -1,0 +1,112 @@
+/* Layout Constants Mapping Tokens */
+.rows-custom { height: 68px; resize: none; }
+.min-h-350 { min-height: 350px; }
+.min-vh-100 { min-height: 100vh; }
+.max-w-400 { max-width: 400px; }
+.icon-badge-round { width: 48px; height: 48px; border-radius: 50%; }
+
+/* Control panel structure boundaries */
+.admin-upload-card {
+    border-width: 1px;
+    box-shadow: 0 4px 20px rgba(11, 34, 22, 0.03) !important;
+}
+
+/* Image preview framing boxes configurations */
+.preview-image-container {
+    width: 100%;
+    max-height: 400px;
+    border: 1.5px dashed rgba(16, 185, 129, 0.2);
+}
+
+/* Switches and Input styling parameters focus indicators */
+.form-control:focus {
+    border-color: #10b981;
+    box-shadow: 0 0 0 3.5px rgba(16, 185, 129, 0.1);
+}
+.check-success-switch:checked {
+    background-color: #10b981 !important;
+    border-color: #10b981 !important;
+}
+
+.publish-btn {
+    background-color: var(--secondary-color);
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+}
+.publish-btn:hover {
+    background-color: #8faf8d;
+    color: #fff;
+}
+
+/* Button UI Interactions Easing Configurations */
+.hover-danger-btn:hover {
+    background-color: rgba(239, 68, 68, 0.15) !important;
+    border-color: #ef4444 !important;
+    color: #b91c1c !important;
+}
+
+/* Dashboard table container framing overrides */
+.table-responsive {
+    width: 100%;
+    margin-bottom: 0;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.table-img-frame {
+    width: 44px;
+    height: 44px;
+}
+
+.table th {
+    font-weight: 700;
+    padding: 12px 16px !important;
+    background-color: #f8fafc !important;
+    border-bottom: 2px solid #e2e8f0 !important;
+}
+
+.table td {
+    padding: 12px 16px !important;
+    vertical-align: middle;
+    border-bottom: 1px solid #edf2f7;
+}
+
+/* Custom interactive action control micro vectors tracking buttons */
+.table-action-btn {
+    width: 32px;
+    height: 32px;
+    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.table-action-btn:hover {
+    transform: scale(1.05);
+}
+
+.link-dark-emerald:hover {
+    opacity: 0.8;
+}
+
+/* Hardware accelerated infinite rotators configurations */
+.animate-spin {
+    animation: productionTableSpin 0.8s linear infinite;
+}
+@keyframes productionTableSpin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.animate-spin {
+    animation: simpleSpinCycle 1s linear infinite;
+}
+@keyframes simpleSpinCycle {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.animate-fade-in {
+    animation: cardAppearanceIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+@keyframes cardAppearanceIn {
+    0% { opacity: 0; transform: translateY(12px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
