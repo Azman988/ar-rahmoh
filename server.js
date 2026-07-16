@@ -47,7 +47,7 @@ if (process.env.NODE_ENV === 'production') {
     app.use(express.static(path.join(__dirname, './dist')));
 
     // Direct all non-API routes straight back to React SPA index file
-    app.get('/*path', (req, res) => {
+    app.get(/.*/, (req, res) => {
         res.sendFile(path.resolve(__dirname, 'dist', 'index.html'));
     });
 }
@@ -55,7 +55,7 @@ if (process.env.NODE_ENV === 'production') {
 mongoose.connect(MONGO_URI)
     .then(() => {
         console.log("🎯 MongoDB Database pipeline calibrated successfully.");
-        app.listen(PORT, () => console.log(`🚀 Production backend operating on port: ${PORT}`));
+        app.listen(PORT, '0.0.0.0', () => console.log(`🚀 Production backend operating on port: ${PORT}`));
     })
     .catch(err => {
         console.error("❌ Mongoose core adapter initialization blocked:", err.message);
