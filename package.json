@@ -8,7 +8,7 @@
     "frontend": "vite",
     "server": "nodemon --ignore node_modules --ignore dist --ignore .git server.js",
     "dev": "concurrently \"npm run frontend\" \"npm run server\"",
-    "build": "npm install && vite build",
+    "build": "npm install --include=dev && vite build",
     "start": "node server.js",
     "lint": "eslint .",
     "preview": "vite preview",
