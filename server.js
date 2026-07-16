@@ -11,6 +11,10 @@ import adminRoutes from './Backend/routes/adminRoutes.js';
 
 const app = express();
 
+// Resolve directory paths safely for native Node ES Modules
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 // Database Connections & Operational Listener Activation
 const PORT = process.env.PORT || 5000;
 const MONGO_URI = process.env.MONGO_URI;
@@ -24,8 +28,21 @@ app.use(cors({
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+if (process.env.NODE_ENV === 'production') {
+    // Tell Express where the compiled production frontend build files live
+    app.use(express.static(path.resolve(__dirname, 'dist')));
+}
+
 // Core Architectural Service Endpoint Handlers
 app.use('/api/v1/admin', adminRoutes);
+
+// --- STATIC ASSET RENDER HOSTING PIPELINE ---
+if (process.env.NODE_ENV === 'production') {
+    // Direct all non-API routes straight back to React SPA index file
+    app.get(/.*/, (req, res) => {
+        res.sendFile(path.resolve(__dirname, 'dist', 'index.html'));
+    });
+}
 
 // Catch-All Global Express Runtime Error Boundary
 app.use((err, req, res, next) => {
@@ -37,20 +54,6 @@ app.use((err, req, res, next) => {
     next();
 });
 
-// Resolve directory paths safely for native Node ES Modules
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
-// --- STATIC ASSET RENDER HOSTING PIPELINE ---
-if (process.env.NODE_ENV === 'production') {
-    // Tell Express where the compiled production frontend build files live
-    app.use(express.static(path.resolve(__dirname, 'dist')));
-
-    // Direct all non-API routes straight back to React SPA index file
-    app.get(/.*/, (req, res) => {
-        res.sendFile(path.resolve(__dirname, 'dist', 'index.html'));
-    });
-}
 
 mongoose.connect(MONGO_URI)
     .then(() => {
