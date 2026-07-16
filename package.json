@@ -5,8 +5,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "frontend": "vite",
+    "server": "nodemon --ignore node_modules --ignore dist --ignore .git server.js",
+    "dev": "concurrently \"npm run frontend\" \"npm run server\"",
+    "build": "npm install && vite build",
+    "start": "node server.js",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
@@ -15,9 +18,18 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^7.2.0",
     "bootstrap": "^5.3.8",
+    "cloudinary": "^2.10.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "lucide-react": "^1.23.0",
+    "mongoose": "^9.7.4",
+    "multer": "^2.2.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "react-router": "^7.14.1",
+    "react-router-dom": "^7.18.1",
     "react-router-hash-link": "^2.4.3"
   },
   "devDependencies": {
@@ -25,11 +37,12 @@
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.1",
+    "concurrently": "^10.0.3",
     "eslint": "^9.39.4",
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.5.2",
-    "gh-pages": "^6.3.0",
     "globals": "^17.4.0",
+    "nodemon": "^3.1.14",
     "vite": "^8.0.4"
   }
 }
