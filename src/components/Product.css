@@ -1,75 +1,112 @@
-.product-grid-wrapper {
-    margin-top: -4.5rem;
-    background: var(--white-color);
-    padding: 20px 0; border-radius: 1.5rem;
-    display: flex;
-    flex-direction: column;
-}
-.product-grid-wrapper .header {
-    font-size: 19px;
-    margin-bottom: 20px;
-    font-family: 'Glory', sans-serif; font-size: 23px;
-    color: var(--accent-color);
-    text-shadow: 0 1px 2px var(--primary-color);
-}
-.product-grid-wrapper h6 {
-    font-size: 17px;
-    font-weight: bold;
-    color: var(--primary-color);
-    text-align: center;
-}
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(1, minmax(250px, 1fr));
-    gap: 20px;
-    margin: auto 35px !important;
-}
-.product-card {
-    background: var(--background-color);
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 0px 4px var(--shadow-color);
-}
-.disclaimer {
-    width: 80%;
-    font-size: 16px;
-    font-family: 'Glory', sans-serif;
-    background: var(--background-color); color: var(--primary-color);
-    border-left: 2px solid red;
+.text-success-light { color: #059669; }
+
+.search-input-wrapper {
+    max-width: 320px;
 }
 
-@media screen and (max-width: 410px) {
-    .grid-container {
-        margin: auto 10px;  
+/* Absolute Positioning for the Inner Search SVG Icon */
+.search-icon-anchor {
+    left: 16px;
+    pointer-events: none;
+    transition: color 0.2s ease;
+}
+
+/* Premium Search Input Field Interactions */
+.premium-search-input {
+    height: 42px;
+    padding-left: 44px !important;
+    padding-right: 16px !important;
+    border: 1.5px solid rgba(0, 0, 0, 0.08);
+    color: #0b2216;
+    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Active focus outline styles */
+.premium-search-input:focus {
+    background-color: #ffffff;
+    border-color: #10b981;
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.08);
+    outline: none;
+}
+
+/* Animate the inner icon color when user clicks the input field */
+.search-input-wrapper:focus-within .search-icon-anchor {
+    color: #10b981 !important;
+}
+
+/* Fluid responsive breakdown for small phone dimensions */
+@media (max-width: 575.98px) {
+    .search-input-wrapper {
+        max-width: 100%; /* Spans full horizontal container bounds on mobile */
     }
 }
-@media screen and (max-width: 575px) {
-    .product-card {
-        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
-    }
+
+.product-hero-banner {
+    height: 180px;
+    background-color: #0b2216;
 }
-@media screen and (min-width: 575px) and (max-width: 850px) {
-    .grid-container {
-        grid-template-columns: repeat(2, minmax(250px, 1fr));
-        margin: auto 8px;  
-    }
-    
+.product-hero-img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.35);
 }
-@media screen and (max-width: 663px) and (min-width: 575px) {
-    .grid-container {
-        margin: auto 0px !important;
-    }
+.product-overlay {
+    background: linear-gradient(180deg, transparent 0%, rgba(11, 34, 22, 0.6) 100%);
 }
-@media screen and (min-width: 850px) and (max-width: 1100px) {
-    .grid-container {
-        grid-template-columns: repeat(3, minmax(250px, 1fr));
-        margin: auto 5px;
-    }
-    
+
+.product-premium-card {
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+    border-width: 1px;
 }
-@media screen and (min-width: 1100px) {
-    .grid-container {
-        grid-template-columns: repeat(4, minmax(250px, 1fr));
-        margin: auto 10px;
-    }
+.product-premium-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.75rem 2rem rgba(11, 34, 22, 0.05) !important;
+    border-color: rgba(16, 185, 129, 0.2) !important;
+}
+
+/* Product Standardized Image Box Constraints */
+.product-img-wrapper {
+    width: 210px;
+    height: 210px;
+}
+.product-catalog-img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.4s ease;
+}
+.product-premium-card:hover .product-catalog-img {
+    transform: scale(1.05); /* Modern fluid zoom behavior on card hover */
+}
+
+.btn-load-more {
+    background-color: #ffffff;
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    letter-spacing: 0.05em;
+}
+.btn-load-more:hover {
+    color: #ffffff !important;
+    background-color: #10b981;
+    border-color: #10b981 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(16, 185, 129, 0.12) !important;
+}
+.btn-load-more:active {
+    transform: translateY(0);
+}
+
+/* Kinetic Micro Arrow Motions */
+.load-more-arrow {
+    transition: transform 0.2s ease;
+}
+.btn-load-more:hover .load-more-arrow {
+    transform: translateY(3px);
+}
+
+/* Smooth Block Arrival Animation */
+.animate-load-in {
+    animation: simpleCatalogFadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+@keyframes simpleCatalogFadeIn {
+    0% { opacity: 0; transform: translateY(8px); }
+    100% { opacity: 1; transform: translateY(0); }
 }

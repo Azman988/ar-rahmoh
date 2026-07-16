@@ -1,34 +1,66 @@
-.comments-header {
-    font-weight: 650 !important;
-    font-size: 1.1rem !important;
-    color: var(--primary-color);
-    margin-bottom: 25px !important;
+/* Core Styling Rules matching existing global patterns */
+.text-dark-emerald { color: #0b2216; }
+.fw-extrabold { font-weight: 800; }
+.fs-7 { font-size: 0.875rem; }
+.tracking-wider { letter-spacing: 0.1em; }
+.border-light-dark { border-color: rgba(0, 0, 0, 0.06) !important; }
+.z-index-2 { z-index: 2; }
+.max-w-600 { max-width: 600px; }
+.italic-style { font-style: italic; }
+
+/* Infinite Scroll Marquee Core CSS Mechanism */
+.marquee-wrapper {
+    mask-image: linear-gradient(to right, transparent, #000 10%, #000 90%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, #000 10%, #000 90%, transparent);
 }
-.comment-div {
-    background: var(--background-color);
-    border-right: 3px solid var(--secondary-color);
-    border-bottom: 3px solid var(--secondary-color);
-    padding: 10px 20px; border-radius: 15px;
-    box-shadow: 1px 1px 6px var(--shadow-color);
+
+.marquee-track {
+    animation: marqueeScroll 35s linear infinite;
+    width: max-content;
 }
-.comment-div > div {
-    display: flex;
+
+/* Pause layout loop movements smoothly on cursor hover */
+.marquee-wrapper:hover .marquee-track {
+    animation-play-state: paused;
+}
+
+@keyframes marqueeScroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        /* Loops exactly half the total cloned track width layout boundary */
+        transform: translateX(calc(-33.333% - 8px)); 
+    }
+}
+
+/* Custom Standardized Feedback Card Dimensions */
+.modern-feedback-card {
+    width: 380px;
+    flex-shrink: 0;
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
+}
+
+.modern-feedback-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(16, 185, 129, 0.2) !important;
+}
+
+.quote-badge {
+    display: inline-flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
 }
-.comment-div h6 {
-    font-weight: 700;
-    font-family: 'Exo';
-    margin-bottom: 0;
+
+/* Responsive Scaling for Ultra-Narrow Devices */
+@media (max-width: 575.98px) {
+    .modern-feedback-card {
+        width: 300px;
+    }
+    .marquee-track {
+        animation-duration: 25s; /* Speeds loop up slightly on smaller containers */
+    }
 }
-.comment-div .ratings {
-    color: var(--accent-color) !important;
-    font-size: 20px;
-    pointer-events: none;
-}
-.comment-div .comment {
-    text-align: center;
-    padding: 10px 7%;
-    font-family: 'Glory';
-    font-weight: 600;
-}
+
