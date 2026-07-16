@@ -1,20 +1,19 @@
+import 'dotenv/config'; 
+
 import express from 'express';
 import mongoose from 'mongoose';
 import cors from 'cors';
-import dotenv from 'dotenv';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
 // Import our route ecosystem
 import adminRoutes from './Backend/routes/adminRoutes.js'; 
 
-dotenv.config();
-
 const app = express();
 
 // Database Connections & Operational Listener Activation
 const PORT = process.env.PORT || 5000;
-const MONGO_URI = process.env.MONGO_URI || "mongodb://127.0.0.1:27017/ar_rahmoh_db";
+const MONGO_URI = process.env.MONGO_URI;
 
 // Secure Global Application Middleware layers
 app.use(cors({
@@ -29,12 +28,13 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/api/v1/admin', adminRoutes);
 
 // Catch-All Global Express Runtime Error Boundary
-app.use((err, req, res,) => {
+app.use((err, req, res, next) => {
     console.error("Critical Execution Fault:", err.message);
     res.status(err.status || 500).json({
         success: false,
         message: err.message || "An underlying server failure tripped network pathways."
     });
+    next();
 });
 
 // Resolve directory paths safely for native Node ES Modules
