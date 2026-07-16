@@ -1,99 +1,48 @@
-.service-container {
-    margin-top: -5rem;
+.services-hero-banner {
+    height: 180px;
+    background-color: #0b2216;
 }
-.service-inner-container {
-    background-color: var(--secondary-color);
-    border-radius: 1.5rem;
+.hero-bg-img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.35);
 }
-.main-services {
-    background: var(--background-color);
-    border-radius: 1.5rem;
+.banner-gradient-overlay {
+    background: linear-gradient(180deg, transparent 0%, rgba(11, 34, 22, 0.6) 100%);
 }
-.services-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+
+/* Service Presentation Cards styling rules */
+.service-premium-card {
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
 }
-@media screen and (max-width: 767px) {
-    .services-list {
-        grid-template-columns: 1fr;
-    }
+.service-premium-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0.75rem 2rem rgba(11, 34, 22, 0.05) !important;
+    border-color: rgba(16, 185, 129, 0.2) !important;
 }
-.core-header {
-    font-family: 'Glory', sans-serif; font-size: 23px;
-    color: var(--accent-color);
-    text-shadow: 0 1px 2px var(--primary-color);margin-bottom: 5px; 
+.icon-badge-box {
+    align-items: center;
+    justify-content: center;
 }
-.others-header {
-    font-family: 'Glory', sans-serif; font-size: 20px;
-    color: var(--white-color); text-align: center;margin-bottom: 0px; 
+
+/* Bottom Call to Action Section Box rules */
+.services-cta-banner {
+    background: linear-gradient(135deg, #091f14 0%, #040c08 100%);
 }
-.service-wrapper { 
-    background-color: rgba(22, 90, 42, 0.6); color: var(--white-color); border-radius: 1rem;
+.cta-pattern-mask {
+    background-image: radial-gradient(rgba(255, 255, 255, 0.15) 1px, transparent 0);
+    background-size: 20px 20px;
+    pointer-events: none;
 }
-.service {
-    font-family: 'Exo', sans-serif; font-size: 15px;
-    padding: 1rem; border: 2px solid var(--secondary-color); border-radius: 1.5rem; height: 100%;
-    display: flex; flex-direction: column; gap: 1rem; justify-content: space-between;
-    background-color: rgba(22, 90, 42, 0.7); color: var(--white-color); box-shadow: 1px 1px 10px var(--shadow-color);
-}
-.service span {
-    font-weight: 700; font-size: 16px;
-    color: var(--accent-color);
-}
-.service a {
-    color: var(--accent-color);
-    font-size: 14px;
-}
-.core-service-wrap {
-    border-radius: 1.5rem;
-    box-shadow: 1px 1px 10px var(--shadow-color);
-}
-.hijama-service {
-    background: url(../assets/hijama.webp) no-repeat center center/cover;
-}
-.bee-venom-service {
-    background: url(../assets/bee-venom.webp) no-repeat center center/cover;
-}
-.sauna-service {
-    background: url(../assets/sauna.webp) no-repeat center center/cover;
-}
-.arteracare-service {
-    background: url(../assets/arteracare.webp) no-repeat center center/cover;
-}
-.additional-services {
-    background: url(../assets/consultation.webp) no-repeat center center/cover;
-    max-width: 671px;
-}
-.benefits {
-    font-family: 'Glory', sans-serif; font-size: 16px;
-    background-color: rgba(22, 90, 42, 0.6); color: var(--white-color);
-    padding: 1rem;
-    border-radius: 0.5rem; border: 2px solid var(--secondary-color);
-}
-.benefits ul {
-    list-style: none;
-    padding-left: 0.5rem;
-}
-.benefits span {
-    color: var(--checkmark-color);
-    font-weight: 800;
-    margin-right: 6px !important;
-}
-.more-service {
-    font-weight: 400;
-    font-family: 'Roboto', serif;
-}
-.c-t-a {
-    width: 100%;
-    font-size: 14px;
-    font-family: 'Exo', sans-serif;
-    background: var(--background-color);
-    color: var(--primary-color);
-    margin-top: 20px;
-}
-.c-t-a .cta-btn {
-    background-color: var(--primary-color);
-    color: var(--white-color);
+.btn-light-cta {
+    background-color: #ffffff;
+    color: #091f14;
     border: none;
+    transition: transform 0.2s ease, background-color 0.2s ease;
 }
+.btn-light-cta:hover {
+    background-color: #f3f4f6;
+    color: #091f14;
+    transform: translateY(-2px);
+}
+
