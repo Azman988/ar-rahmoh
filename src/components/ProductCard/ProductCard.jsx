@@ -11,7 +11,7 @@ export function ProductCatalog({ products, setActiveProduct }) {
                 const currentQty = quantities[product._id] || 1;
                 return (
                     <div key={product._id} className="col">
-                        <div className="product-premium-card h-100 p-4 rounded-4 shadow-sm bg-white border border-light-dark d-flex flex-column justify-content-between">
+                        <div className="product-premium-card h-100 p-2 p-sm-4 rounded-4 shadow-sm bg-white border border-light-dark d-flex flex-column justify-content-between">
                             
                             {/* Clickable Card Body Area for detailed description mapping modal trigger */}
                             <div className="cursor-pointer" onClick={() => setActiveProduct(product)}>

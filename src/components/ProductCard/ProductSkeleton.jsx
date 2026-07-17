@@ -2,8 +2,8 @@ import React from 'react';
 import './ProductSkeleton.css';
 
 export function ProductSkeleton() {
-    // Generate an array of 4 skeleton cards to simulate a loading row layout structure
-    const skeletonCards = Array(4).fill(0);
+    // Generate an array of 12 skeleton cards to simulate a loading row layout structure
+    const skeletonCards = Array(12).fill(0);
 
     return (
         <>

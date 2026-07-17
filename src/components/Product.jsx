@@ -150,7 +150,7 @@ export function Product() {
                     </div>
                 ) : (
                     <>
-                        <div className="row g-4 row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 justify-content-center mb-4">
+                        <div className="row g-1 g-sm-4 row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 mb-4">
                             <ProductCatalog products={displayedProducts} setActiveProduct={setActiveProduct} />
                         </div>
 
