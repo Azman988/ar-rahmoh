@@ -7,6 +7,7 @@ export default defineConfig({
     server: {
         proxy: {
         // Intercepts any frontend requests starting with /api
+        base: './',
         '/api': {
             target: 'http://localhost:5000', // Your Express backend URL
             changeOrigin: true,
