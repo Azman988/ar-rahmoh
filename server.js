@@ -28,6 +28,7 @@ app.use(cors({
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+// Static Asset Hosting for Production Builds
 if (process.env.NODE_ENV === 'production') {
     // Tell Express where the compiled production frontend build files live
     app.use(express.static(path.resolve(__dirname, 'dist')));
@@ -36,7 +37,7 @@ if (process.env.NODE_ENV === 'production') {
 // Core Architectural Service Endpoint Handlers
 app.use('/api/v1/admin', adminRoutes);
 
-// --- STATIC ASSET RENDER HOSTING PIPELINE ---
+// Direct all non-API routes back to React SPA index file for client-side routing
 if (process.env.NODE_ENV === 'production') {
     // Direct all non-API routes straight back to React SPA index file
     app.get(/.*/, (req, res) => {
