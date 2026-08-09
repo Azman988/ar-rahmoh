@@ -14,12 +14,6 @@
     max-width: 1200px;
     padding: 0 1.7rem;
 }
-.fs-7 {
-    font-size: 0.85rem;
-}
-.fs-8 {
-    font-size: 0.8rem;
-}
 /* Custom Typography Configurations */
 .text-dark-emerald { color: #0b2216; }
 .fw-extrabold { font-weight: 800; }
@@ -44,9 +38,19 @@
 .max-w-350 { max-width: 350px; }
 .max-h-85vh { max-height: 85vh; }
 .cursor-pointer { cursor: pointer; }
+.text-truncate {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    line-clamp: 1;
+    text-overflow: ellipsis;
+    max-width: 95%;
+    overflow: hidden;
+}
 .text-truncate-2 {
     display: -webkit-box;
     -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
     -webkit-box-orient: vertical;
     line-clamp: 2;
     overflow: hidden;

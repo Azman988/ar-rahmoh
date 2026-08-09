@@ -28,7 +28,7 @@ export function Footer() {
                                 />
                                 <div className='ms-2 text-white d-flex flex-column logo-text-group'>
                                     <span className="fw-extrabold tracking-wide fs-6 lh-sm mb-0">Ar-Rahmoh Islamic Cure</span>
-                                    <span className="text-success-light fw-medium fs-7">& Blood Cupping Therapy</span>
+                                    <span className="fw-medium fs-7">& Blood Cupping Therapy</span>
                                 </div>
                             </Link>
                             

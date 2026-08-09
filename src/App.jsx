@@ -17,6 +17,7 @@ import { Contact } from './components/Contact';
 import { AdminLogin } from './Admin/AdminLogin';
 import { ProtectedAdminRoute } from './Admin/ProtectedAdminRoute';
 import { AdminUpload } from './Admin/AdminUpload';
+import { ProductDetail } from './components/ProductDetail';
 
 // --- VISUAL COUPLING PIPELINE LAYOUT ---
 // This acts as a wrapper that attaches the navigation components only to nested children
@@ -39,6 +40,7 @@ function App() {
         <Route element={<PublicLayout />}>
           <Route path='/' element={<HomePage />} />
           <Route path='/product' element={<Product />} />
+          <Route path='/product/:id' element={<ProductDetail />} />
           <Route path='/service' element={<Service />} />
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
