@@ -11,10 +11,11 @@ section {
 
 /* Text & Visual Highlights Gradient Engines */
 .text-success-light {
-    color: #34d399; /* Bright mint contrast token */
+    color: #34d399;
 }
 .text-gradient {
     background: linear-gradient(45deg, #34d399, #10b981);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

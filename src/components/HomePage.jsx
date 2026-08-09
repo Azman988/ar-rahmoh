@@ -5,8 +5,6 @@ import './HomePage.css'
 import { Feedback } from './Feedback/Feedback'
 import { CheckCircle2, Handshake, HeartPulse, Leaf, LucideHeading6, LucideShoppingBag, MessageCircleCode, MoveRight, Package, PhoneCall, ShieldCheck, ShoppingBag, Sparkles } from 'lucide-react'
 import { useEffect, useMemo, useState } from 'react'
-import { useCart } from './CartContext'
-import { ProductModal } from './ProductModal'
 import { ProductCatalog } from './ProductCard/ProductCard'
 import { ProductSkeleton } from './ProductCard/ProductSkeleton'
 import { PromoModal } from './SeminarModal/SeminarModal'
@@ -16,9 +14,6 @@ export function HomePage() {
 
     const [loading, setLoading] = useState(true);
     const [products, setProducts] = useState(null);
-    const [activeProduct, setActiveProduct] = useState(null);
-    const { addToCart } = useCart();
-
     // --- Fetch Live Product Catalog from API Endpoint ---
     useEffect(() => {
         const fetchLiveCatalog = async () => {
@@ -135,7 +130,7 @@ export function HomePage() {
 
             {/* Trust Section */}
             <section className="py-4 pillars-section position-relative overflow-hidden">
-                
+
                 <div className='container-fluid container-max d-flex align-items-center justify-content-center py-4 px-xl-0 pillars-container'>
                     <div className='row g-4 row-cols-1 row-cols-md-2 row-cols-xl-4'>
                         <div className="col border-white-10">
@@ -154,6 +149,7 @@ export function HomePage() {
                                     <Leaf size={24} />
                                 </div>
                                 <h6 className='fw-bold'>Natural Supplement</h6>
+
                                 <p>Our premium selection of organic remedies and prophetic nutrients offers pure, highly potent benefits sourced straight from the heart of nature.</p>
                             </div>
                         </div>
@@ -206,20 +202,11 @@ export function HomePage() {
                         {loading ? (
                             <ProductSkeleton />
                         ) : (
-                            <ProductCatalog products={randomTenProducts} setActiveProduct={setActiveProduct} />
+                            <ProductCatalog products={randomTenProducts} />
                         )}
                     </div>
                 </div>
             </section>
-
-            {/* Product modal for product details */}
-            {activeProduct && (
-                <ProductModal
-                    product={activeProduct}
-                    addToCart={addToCart}
-                    close={() => setActiveProduct(null)}
-                />
-            )}
 
             {/* Service Section */}
             <section className="py-5 service-section">

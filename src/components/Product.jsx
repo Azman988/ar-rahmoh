@@ -3,16 +3,12 @@ import { ShoppingBag, AlertCircle, Search, HelpCircle, ChevronDown, Layers } fro
 import './Product.css';
 import { ProductSkeleton } from './ProductCard/ProductSkeleton';
 import { ProductCatalog } from './ProductCard/ProductCard';
-import { useCart } from './CartContext';
-import { ProductModal } from './ProductModal';
 
 export function Product() {
     const [loading, setLoading] = useState(true);
     const [products, setProducts] = useState(null);
-    const [activeProduct, setActiveProduct] = useState(null);
     const [searchQuery, setSearchQuery] = useState('');
     const [appliedQuery, setAppliedQuery] = useState('');
-    const { addToCart } = useCart();
 
     // --- Pagination Properties Configuration ---
     const ITEMS_PER_PAGE = 12;
@@ -55,8 +51,8 @@ export function Product() {
         return products.filter(product => {
             return (
                 product.name.toLowerCase().includes(cleanQuery) ||
-    (product.composition && product.composition.toLowerCase().includes(cleanQuery)) ||
-    (product.desc && product.desc.some(d => d.option.toLowerCase().includes(cleanQuery)))
+                (product.composition && product.composition.toLowerCase().includes(cleanQuery)) ||
+                (product.desc && product.desc.some(d => d.option.toLowerCase().includes(cleanQuery)))
             );
         });
     }, [appliedQuery, products]);
@@ -145,13 +141,13 @@ export function Product() {
                         <HelpCircle size={44} className="text-warning mx-auto mb-3 opacity-75" />
                         <h4 className="fw-bold text-dark-emerald mb-1 fs-5">No Matching Items Sighted</h4>
                         <p className="text-muted fs-7 mb-0">
-                            We couldn't locate therapeutic treatments matching <strong className="text-success">"{appliedQuery}"</strong>. Please verify spelling rules or check our diagnostic criteria keys.
+                            No product found matching <strong className="text-success">"{appliedQuery}"</strong>. <br /> Please verify spelling rules or try refreshing the page.
                         </p>
                     </div>
                 ) : (
                     <>
                         <div className="row g-1 g-sm-4 row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 mb-4">
-                            <ProductCatalog products={displayedProducts} setActiveProduct={setActiveProduct} />
+                            <ProductCatalog products={displayedProducts} />
                         </div>
 
                         {/* --- Dynamic Pagination Summary & Control Module --- */}
@@ -178,18 +174,9 @@ export function Product() {
                 <div className="max-w-800 mx-auto p-3 rounded-3 border border-danger-subtle bg-danger-subtle bg-opacity-10 d-flex gap-3 align-items-center mt-5">
                     <AlertCircle size={22} className="text-danger flex-shrink-0" />
                     <p className="mb-0 text-muted fs-7 lh-base">
-                        <strong className="text-danger">Medical Disclaimer:</strong> All our alternative wellness products are 100% natural, premium grade, and inspired strictly by authentic traditional Islamic values. They are intentionally designed to support your body's constitutional wellness networks naturally. Make sure to double-check the physical label to confirm product names, values, and instructions.
+                        <strong className="text-danger">Medical Disclaimer:</strong> All our products are 100% natural, premium grade, and inspired strictly by authentic traditional Islamic values. They are intentionally designed to support your body's constitutional wellness networks naturally. Make sure to double-check the physical label to confirm product names, values, and instructions.
                     </p>
                 </div>
-
-                {/* Product Modal for Product Details */}
-                {activeProduct && (
-                    <ProductModal
-                        product={activeProduct}
-                        addToCart={addToCart}
-                        close={() => setActiveProduct(null)}
-                    />
-                )}
             </div>
         </section>
     );
