@@ -8,12 +8,13 @@ const router = express.Router();
 
 router.post('/login', adminLoginHandler);
 
-// All mutations are now protected by the secure middleware signature validation token checkpoint
+// All mutations are protected by the secure middleware signature validation token checkpoint
 router.route('/products')
     .post(adminAuth, upload, adminController.createProduct)
     .get(adminController.getAllProducts);
 
 router.route('/products/:id')
+    .get(adminController.getSingleProduct)
     .put(adminAuth, upload, adminController.updateProduct)
     .delete(adminAuth, adminController.deleteProduct);
 
