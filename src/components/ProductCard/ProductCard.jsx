@@ -23,7 +23,7 @@ export function ProductCatalog({ products }) {
                         >
                             
                             {/* Top Card Body Area */}
-                            <div className="d-flex flex-column align-items-center justify-content-center gap-2 mb-2 mb-sm-3">
+                            <div className="d-flex flex-column align-items-center justify-content-center gap-2 mb-2 mb-sm-3 px-1">
                                 
                                 {/* Image Area */}
                                 <div className="w-100 d-flex align-items-center justify-content-center mb-2">
@@ -33,19 +33,22 @@ export function ProductCatalog({ products }) {
                                 </div>
 
                                 {/* Text Details */}
-                                <div className="text-center">
-                                    <h5 className="fw-bold text-dark-emerald fs-6 text-truncate text-truncate-2 px-1">{product.name}</h5>
-                                    <p className="fw-extrabold text-success fs-5 mb-0">₦{product.price.toLocaleString()}</p>
+                                <div className="w-100">
+                                    <h5 className="fw-bold text-dark-emerald fs-7 text-truncate mb-0">{product.name}</h5>
+
+                                    <p className="fw-semibold text-dark-emerald fs-8 text-truncate mb-1">{product.benefits}</p>
+
+                                    <p className="fw-extrabold text-success text-center fs-5 mb-0">₦{product.price.toLocaleString()}</p>
                                 </div>
                             </div>
 
                             {/* FOOTER */}
                             <div 
-                                className="pt-2 border-top border-light-dark mt-2 z-index-1" 
+                                className="pt-2 border-top border-light-dark z-index-1" 
                                 onClick={(e) => e.stopPropagation()} 
                             >
                                 {/* Quantity Controls */}
-                                <div className="d-flex align-items-center justify-content-center gap-4 mb-2">
+                                <div className="d-flex align-items-center justify-content-between mb-2">
                                     <button 
                                         onClick={(e) => {
                                             e.stopPropagation(); 

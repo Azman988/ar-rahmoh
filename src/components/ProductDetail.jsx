@@ -161,7 +161,7 @@ export function ProductDetail() {
                             {product.composition && (
                                 <div>
                                     <h6 className="fw-bold text-dark fs-6 text-uppercase tracking-wide mb-2 d-flex align-items-center gap-2">
-                                        <CheckCircle2 size={18} className="text-success" /> Product Composition
+                                        <CheckCircle2 size={18} className="text-success" /> Product Composition:
                                     </h6>
                                     <p className="text-secondary lh-lg mb-0">{product.composition}</p>
                                 </div>
@@ -170,7 +170,7 @@ export function ProductDetail() {
                             {product.benefits && (
                                 <div>
                                     <h6 className="fw-bold text-dark fs-6 text-uppercase tracking-wide mb-2 d-flex align-items-center gap-2">
-                                        <ShieldCheck size={18} className="text-success" /> Key Benefits
+                                        <ShieldCheck size={18} className="text-success" /> Key Benefits:
                                     </h6>
                                     <p className="text-secondary lh-lg mb-0">{product.benefits}</p>
                                 </div>
@@ -178,7 +178,7 @@ export function ProductDetail() {
 
                             {product.usage && (
                                 <div>
-                                    <h6 className="fw-bold text-dark fs-6 text-uppercase tracking-wide mb-2">Recommended Usage</h6>
+                                    <h6 className="fw-bold text-dark fs-6 text-uppercase tracking-wide mb-2">Recommended Usage:</h6>
                                     <p className="text-secondary lh-lg mb-0 bg-light p-3 rounded-3 border">{product.usage}</p>
                                 </div>
                             )}

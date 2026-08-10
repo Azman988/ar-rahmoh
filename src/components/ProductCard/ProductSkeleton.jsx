@@ -19,12 +19,13 @@ export function ProductSkeleton() {
                         {/* Title and Pricing Text Loading Slots */}
                         <div className="text-center d-flex flex-column align-items-center gap-2 mb-3">
                             <div className="skeleton-pulse skeleton-text skeleton-title"></div>
+                            <div className="skeleton-pulse skeleton-text skeleton-title"></div>
                             <div className="skeleton-pulse skeleton-text skeleton-price"></div>
                         </div>
 
                         {/* Lower Action Elements Loading Space */}
                         <div className="pt-2 border-top border-light-dark mt-2">
-                            <div className="d-flex align-items-center justify-content-center gap-3 mb-2">
+                            <div className="d-flex align-items-center justify-content-between mb-2">
                                 <div className="skeleton-pulse skeleton-icon-btn"></div>
                                 <div className="skeleton-pulse skeleton-counter-text"></div>
                                 <div className="skeleton-pulse skeleton-icon-btn"></div>
