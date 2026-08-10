@@ -27,7 +27,7 @@ export function ProductCatalog({ products }) {
                                 
                                 {/* Image Area */}
                                 <div className="w-100 d-flex align-items-center justify-content-center mb-2">
-                                    <div className="product-img-wrapper border rounded-3 overflow-hidden bg-light d-flex align-items-center justify-content-center w-100 h-100">
+                                    <div className="product-img-wrapper border rounded-3 overflow-hidden bg-light" style={{ aspectRatio: '1 / 1' }}>
                                         <img src={product.img} alt={product.name} className="product-catalog-img img-fluid object-fit-cover" loading="lazy" />
                                     </div>
                                 </div>

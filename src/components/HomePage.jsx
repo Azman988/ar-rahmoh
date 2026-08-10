@@ -34,8 +34,8 @@ export function HomePage() {
         fetchLiveCatalog();
     }, []);
 
-    // Core Shuffle Processing: Selects 10 completely random products with zero inner duplicates
-    const randomTenProducts = useMemo(() => {
+    // Core Shuffle Processing: Selects 12 completely random products with zero inner duplicates
+    const randomTwelveProducts = useMemo(() => {
         // Safe check to avoid code breaks if database layers are empty
         if (!products || products.length === 0) return [];
 
@@ -49,8 +49,8 @@ export function HomePage() {
             [arrayClone[i], arrayClone[j]] = [arrayClone[j], arrayClone[i]];
         }
 
-        // Extract exactly the first 10 item profiles from the mutated sequence
-        return arrayClone.slice(0, 10);
+        // Extract exactly the first 12 item profiles from the mutated sequence
+        return arrayClone.slice(0, 12);
     }, [products]);
 
     return (
@@ -198,11 +198,11 @@ export function HomePage() {
                     </div>
 
                     {/* Product cards are dynamically rendered here */}
-                    <div className="d-flex align-items-center gap-2 overflow-auto p-3 rounded-4 product-container">
+                    <div className="row g-1 g-sm-4 row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-xl-4">
                         {loading ? (
                             <ProductSkeleton />
                         ) : (
-                            <ProductCatalog products={randomTenProducts} />
+                            <ProductCatalog products={randomTwelveProducts} />
                         )}
                     </div>
                 </div>

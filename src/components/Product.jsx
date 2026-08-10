@@ -11,7 +11,7 @@ export function Product() {
     const [appliedQuery, setAppliedQuery] = useState('');
 
     // --- Pagination Properties Configuration ---
-    const ITEMS_PER_PAGE = 12;
+    const ITEMS_PER_PAGE = 24;
     const [visibleLimit, setVisibleLimit] = useState(ITEMS_PER_PAGE);
 
     // --- Fetch Live Product Catalog from API Endpoint ---

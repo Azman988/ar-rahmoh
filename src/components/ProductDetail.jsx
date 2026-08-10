@@ -179,7 +179,7 @@ export function ProductDetail() {
                             {product.usage && (
                                 <div>
                                     <h6 className="fw-bold text-dark fs-6 text-uppercase tracking-wide mb-2">Recommended Usage:</h6>
-                                    <p className="text-secondary lh-lg mb-0 bg-light p-3 rounded-3 border">{product.usage}</p>
+                                    <p className="text-secondary fw-bold lh-lg mb-0 bg-light p-3 rounded-3 border">{product.usage}</p>
                                 </div>
                             )}
                         </div>
